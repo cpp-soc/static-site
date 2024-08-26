@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 55, 55, 55; /* Dark gray */
+  --background-end-rgb: 105, 105, 105; /* Lighter gray */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 55, 55, 55; /* Dark gray */
+    --background-end-rgb: 105, 105, 105; /* Lighter gray */
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #555, #aaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.team-member {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.social-media a {
+  margin: 0 8px;
+  color: #000;
+}
+
+.social-media a:hover {
+  color: #0073b1; /* Example color for hover effect */
+}
