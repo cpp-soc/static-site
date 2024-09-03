@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
 
@@ -24,6 +25,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, year, program, description, p
       transition={{ duration: 0.5 }}
       className="mt-8 p-6 bg-gray-800 text-white rounded-lg shadow-lg"
     >
+      <Image src={picture} alt={name}/>
       <img src={picture} alt={name} className="w-32 h-32 rounded-full mx-auto" />
       <h2 className="text-4xl font-bold text-blue-600 mt-4">{name}</h2>
       <p className="mt-2 text-lg">{year} - {program}</p>
