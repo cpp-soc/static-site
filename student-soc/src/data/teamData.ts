@@ -46,7 +46,7 @@ const teamData = [
         year: "Senior",
         program: 'Computer Science',
         description: 'Scheduler',
-        picture: 'https://media.licdn.com/dms/image/v2/D5635AQHK7If77peSvg/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1689130406817?e=1726002000&v=beta&t=t-uBskgt7KzcR6oPWTrWwRpWufNpFizJggK7tyjW8Jk',
+        picture: 'https://github.com/cpp-soc/static-site/blob/main/student-soc/src/assets/2024-team/scheduler.jpg',
         media: {
           linkedin: 'https://www.linkedin.com/in/jakeludlow/',
         },
