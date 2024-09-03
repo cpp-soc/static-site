@@ -16,7 +16,7 @@ const Team: React.FC = () => {
       <Navbar />
       <div className="container mx-auto p-4 min-h-screen flex flex-col justify-center items-center">
         <h1 className="text-6xl font-bold text-blue-600 mt-8">Meet the SOC</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
           {teamData.map((member, index) => (
             <TeamCard
               key={index}
@@ -29,10 +29,8 @@ const Team: React.FC = () => {
             />
           ))}
         </div>
-      </div>
-      <div className="container mx-auto p-4 min-h-screen flex flex-col justify-center items-center">
         <h1 className="text-6xl font-bold text-blue-600 mt-8">Meet the Faculty</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
           {facultyData.map((member, index) => (
             <TeamCard
               key={index}

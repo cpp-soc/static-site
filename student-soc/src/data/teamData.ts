@@ -22,8 +22,8 @@ const teamData = [
       },
       {
         name: 'Armin Erika Polanco',
-        year: "MS",
-        program: 'Information Security',
+        year: "Senior",
+        program: 'Computer Science',
         description: 'Vice President of Operations',
         picture: 'https://media.licdn.com/dms/image/v2/D5603AQGCXW5O03tOvQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1695465903236?e=1730937600&v=beta&t=tCIdXPrcpSJmYVE_15rQmFn0Uyc65g34B1JxcI_MWzs',
         media: {
@@ -33,8 +33,8 @@ const teamData = [
       },
       {
         name: 'Ari Torczon',
-        year: "MS",
-        program: 'Information Security',
+        year: "Junior",
+        program: 'Computer Information Systems',
         description: 'Vice President of Finance',
         picture: 'https://media.licdn.com/dms/image/v2/D5603AQGMpXwo1sEFdg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1709798192110?e=1730937600&v=beta&t=uO--jguxq-HB94id5Lb8KZ0zPxJIBpOKwbZUW5phCSM',
         media: {
