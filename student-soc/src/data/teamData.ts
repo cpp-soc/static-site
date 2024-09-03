@@ -36,12 +36,9 @@ const teamData = [
         year: "MS",
         program: 'Information Security',
         description: 'Vice President of Finance',
-        picture: 'https://media.licdn.com/dms/image/v2/D5603AQHC0XTbQrsRMw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1711247876014?e=1730332800&v=beta&t=t3slWU1QLtzvuvgnWSQEYxQgnjvxExZdE_oSy9MTLSI',
+        picture: 'https://media.licdn.com/dms/image/v2/D5603AQGMpXwo1sEFdg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1709798192110?e=1730937600&v=beta&t=uO--jguxq-HB94id5Lb8KZ0zPxJIBpOKwbZUW5phCSM',
         media: {
-          linkedin: 'https://www.linkedin.com/in/hsshin95/',
-          github: 'https://github.com/johndoe',
-          twitter: 'https://twitter.com/johndoe',
-          instagram: 'https://instagram.com/johndoe',
+          linkedin: 'https://www.linkedin.com/in/aritorczon/',
         },
       },
       {
@@ -59,12 +56,9 @@ const teamData = [
         year: "Junior",
         program: 'Computer Information Systems',
         description: 'Vice President of Outreach',
-        picture: 'https://media.licdn.com/dms/image/v2/D5603AQHC0XTbQrsRMw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1711247876014?e=1730332800&v=beta&t=t3slWU1QLtzvuvgnWSQEYxQgnjvxExZdE_oSy9MTLSI',
+        picture: 'https://media.licdn.com/dms/image/v2/D5603AQEpLAgbEUXMcQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710958379455?e=1730937600&v=beta&t=4TMxlnISCj6kEpxEOxh6k9QPsOESK3dmjCi6TNrY7No',
         media: {
-          linkedin: 'https://www.linkedin.com/in/hsshin95/',
-          github: 'https://github.com/johndoe',
-          twitter: 'https://twitter.com/johndoe',
-          instagram: 'https://instagram.com/johndoe',
+          linkedin: 'https://www.linkedin.com/in/eric-heng-86261a194/',
         },
       },
       {
@@ -72,12 +66,10 @@ const teamData = [
         year: "Junior",
         program: 'Computer Information Systems',
         description: 'Webmaster',
-        picture: 'https://media.licdn.com/dms/image/v2/D5603AQHC0XTbQrsRMw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1711247876014?e=1730332800&v=beta&t=t3slWU1QLtzvuvgnWSQEYxQgnjvxExZdE_oSy9MTLSI',
+        picture: 'https://media.licdn.com/dms/image/v2/D5603AQFI7ZBRCOheqQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1698549537540?e=1730937600&v=beta&t=mx1sr099SRy3h0pj529j-EcS_3HLwjEz7VHRr7Pycnw',
         media: {
-          linkedin: 'https://www.linkedin.com/in/hsshin95/',
-          github: 'https://github.com/johndoe',
-          twitter: 'https://twitter.com/johndoe',
-          instagram: 'https://instagram.com/johndoe',
+          linkedin: 'https://www.linkedin.com/in/thomasphao//',
+          github: 'https://github.com/xdkaine',
         },
       },
   ];
