@@ -18,6 +18,16 @@ const facultyData = [
         media: {
         },
       },
+      {
+        name: 'Curtis Carpenter',
+        year: "",
+        program: 'Senior Information Technology Security Analyst',
+        description: '',
+        picture: 'https://media.licdn.com/dms/image/v2/C4E03AQGOZHusrpr88g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1618289524472?e=1730937600&v=beta&t=Fy1lJB8q_TLxE79KNv9IUF39Un-VZCx50-63T9skI_0',
+        media: {
+          linkedin: 'https://www.linkedin.com/in/curtisjcarpenter/',
+        },
+      },
   ];
   
   export default facultyData;
