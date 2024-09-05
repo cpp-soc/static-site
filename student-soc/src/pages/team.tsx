@@ -36,8 +36,6 @@ const Team: React.FC = () => {
             <FacultyCard
               key={index}
               name={member.name}
-              year={member.year}
-              program={member.program}
               description={member.description}
               picture={member.picture}
               media={member.media}

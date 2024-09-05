@@ -8,7 +8,6 @@ const teamData = [
       media: {
         linkedin: 'https://www.linkedin.com/in/hsshin95/',
         github: 'https://github.com/Sh0bra',
-        twitter: 'https://twitter.com/hsshin95',
       },
     },
     {
