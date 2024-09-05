@@ -11,6 +11,7 @@ const Navbar: React.FC = () => {
           <Image 
             src="https://wiki.cppsoc.xyz/logo.png" 
             alt="SOC" 
+            quality={null!}
 /*             width='128' 
             height='128' */
           />
