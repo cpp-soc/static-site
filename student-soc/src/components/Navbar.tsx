@@ -9,9 +9,8 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-2xl font-bold">
           <Image 
-            src="https://wiki.cppsoc.xyz/logo.png" 
+            src="https://raw.githubusercontent.com/cpp-soc/static-site/main/student-soc/src/assets/logo.png" 
             alt="SOC" 
-            quality={null!}
 /*             width='128' 
             height='128' */
           />
