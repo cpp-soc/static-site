@@ -11,8 +11,8 @@ const Navbar: React.FC = () => {
           <Image 
             src="https://raw.githubusercontent.com/cpp-soc/static-site/main/student-soc/src/assets/logo3.png" 
             alt="SOC" 
-/*             width='128' 
-            height='128' */
+            width='128' 
+            height='128'
           />
         </div>
         <div className="hidden md:flex space-x-4">
