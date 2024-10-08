@@ -2,7 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from 'student-soc/src/assets/logo3.png';
+import logo from '@/logo3.png';
 
 const Navbar: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-2xl font-bold">
           <Image 
-            src='/logo3.pbg' 
+            src='/logo3.png' 
             alt="SOC" 
             width='128' 
             height='128'
