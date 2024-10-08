@@ -1,11 +1,10 @@
-import React from 'react';
-import Head from 'next/head';
-import Navbar from '@/components/Navbar';
-import TeamCard from '@/components/TeamCard';
-import FacultyCard from '@/components/FacultyCard';
-import teamData from '@/data/teamData';
-import facultyData from '@/data/facultyData';
-
+import React from "react";
+import Head from "next/head";
+import Navbar from "@/components/Navbar";
+import TeamCard from "@/components/TeamCard";
+import FacultyCard from "@/components/FacultyCard";
+import teamData from "@/data/teamData";
+import facultyData from "@/data/facultyData";
 
 const Team: React.FC = () => {
   return (
@@ -30,7 +29,9 @@ const Team: React.FC = () => {
             />
           ))}
         </div>
-        <h1 className="text-6xl font-bold text-blue-600 mt-8">Meet the Faculty</h1>
+        <h1 className="text-6xl font-bold text-blue-600 mt-8">
+          Meet the Faculty
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
           {facultyData.map((member, index) => (
             <FacultyCard
