@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import logo from '@/assets/logo3.png';
 
 const Navbar: React.FC = () => {
   return (
@@ -9,10 +10,10 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-2xl font-bold">
           <Image 
-            src="https://raw.githubusercontent.com/cpp-soc/static-site/main/student-soc/src/assets/logo3.png" 
+            src={logo} 
             alt="SOC" 
-            width='128' 
-            height='128'
+            width='64' 
+            height='64'
           />
         </div>
         <div className="hidden md:flex space-x-4">
