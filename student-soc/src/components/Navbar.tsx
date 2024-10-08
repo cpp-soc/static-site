@@ -2,7 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '/logo3.png';
+import logo from 'logo3.png';
 
 const Navbar: React.FC = () => {
   return (
