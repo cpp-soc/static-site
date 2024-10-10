@@ -25,6 +25,12 @@ body {
   );
 }
 
+#__next {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .gradient-text {
   background: linear-gradient(90deg, #555, #aaa);
   -webkit-background-clip: text;

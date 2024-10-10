@@ -1,4 +1,3 @@
-// src/pages/schedule.tsx
 import React from 'react';
 import eventData from '../data/schedule';
 import Navbar from '@/components/Navbar';
