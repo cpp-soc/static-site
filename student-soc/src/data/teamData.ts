@@ -15,7 +15,7 @@ const teamData = [
         year: "Junior",
         program: 'Computer Information Systems',
         description: 'Security Engineer Lead',
-        picture: 'https://media.licdn.com/dms/image/v2/C5603AQF4-tz8yjZ1kg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1658646293399?e=1730937600&v=beta&t=Hvd5iPEe6IG57nMKBw3zmwgM_vnStMPjIqt9lXY37EA',
+        picture: 'https://cppsoc.xyz/assets/2024-team/security-engineer-lead.jpg',
         media: {
           linkedin: 'https://www.linkedin.com/in/drakehuffman/',
         },
@@ -25,7 +25,7 @@ const teamData = [
         year: "Senior",
         program: 'Computer Science',
         description: 'Vice President of Operations',
-        picture: 'https://media.licdn.com/dms/image/v2/D5603AQGCXW5O03tOvQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1695465903236?e=1730937600&v=beta&t=tCIdXPrcpSJmYVE_15rQmFn0Uyc65g34B1JxcI_MWzs',
+        picture: 'https://cppsoc.xyz/assets/2024-team/vp-operations.jpg',
         media: {
           linkedin: 'https://www.linkedin.com/in/arminerika//',
           github: 'https://github.com/arminerika',
@@ -36,7 +36,7 @@ const teamData = [
         year: "Junior",
         program: 'Computer Information Systems',
         description: 'Vice President of Finance',
-        picture: 'https://media.licdn.com/dms/image/v2/D5603AQGMpXwo1sEFdg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1709798192110?e=1730937600&v=beta&t=uO--jguxq-HB94id5Lb8KZ0zPxJIBpOKwbZUW5phCSM',
+        picture: 'https://cppsoc.xyz/assets/2024-team/vp-finance.jpg',
         media: {
           linkedin: 'https://www.linkedin.com/in/aritorczon/',
         },
@@ -46,7 +46,7 @@ const teamData = [
         year: "Senior",
         program: 'Computer Science',
         description: 'Scheduler',
-        picture: 'https://raw.githubusercontent.com/cpp-soc/static-site/main/student-soc/src/assets/2024-team/scheduler3.png',
+        picture: 'https://cppsoc.xyz/assets/2024-team/scheduler4.jpg',
         media: {
           linkedin: 'https://www.linkedin.com/in/jakeludlow/',
         },
@@ -56,7 +56,7 @@ const teamData = [
         year: "Junior",
         program: 'Computer Information Systems',
         description: 'Vice President of Outreach',
-        picture: 'https://media.licdn.com/dms/image/v2/D5603AQEpLAgbEUXMcQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710958379455?e=1730937600&v=beta&t=4TMxlnISCj6kEpxEOxh6k9QPsOESK3dmjCi6TNrY7No',
+        picture: 'https://cppsoc.xyz/assets/2024-team/vp-outreach.jpg',
         media: {
           linkedin: 'https://www.linkedin.com/in/eric-heng-86261a194/',
         },
@@ -66,9 +66,9 @@ const teamData = [
         year: "Junior",
         program: 'Computer Information Systems',
         description: 'Webmaster',
-        picture: 'https://media.licdn.com/dms/image/v2/D5603AQFI7ZBRCOheqQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1698549537540?e=1730937600&v=beta&t=mx1sr099SRy3h0pj529j-EcS_3HLwjEz7VHRr7Pycnw',
+        picture: 'https://cppsoc.xyz/assets/2024-team/webmaster.jpg',
         media: {
-          linkedin: 'https://www.linkedin.com/in/thomasphao//',
+          linkedin: 'https://www.linkedin.com/in/thomasphao/',
           github: 'https://github.com/xdkaine',
         },
       },
