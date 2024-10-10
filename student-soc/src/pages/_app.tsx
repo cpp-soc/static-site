@@ -4,7 +4,7 @@ import "../styles/globals.css";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 min-h-screen">
+    <div className="bg-gradient-to-r from-gray-500 to-black min-h-screen">
       <Component {...pageProps} />
     </div>
   );
