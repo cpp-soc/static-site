@@ -52,3 +52,8 @@ body {
 .social-media a:hover {
   color: #0073b1; /* Example color for hover effect */
 }
+
+.navbar .image {
+  width: 75px;
+  height: 75px;
+}
