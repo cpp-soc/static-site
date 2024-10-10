@@ -12,16 +12,18 @@ const HomePage: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="p-6 bg-gray-800 text-white rounded-lg shadow-lg mb-8"
+          className="mt-8 p-6 bg-gray-800 text-white rounded-lg shadow-lg"
         >
           <ImageCarousel />
         </motion.div>
+      </div>
 
+      <div className="container mx-auto p-4 min-h-screen flex flex-col justify-center items-center bg-transparent">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="p-6 bg-gray-800 text-white rounded-lg shadow-lg"
+          className="mt-8 p-6 bg-gray-800 text-white rounded-lg shadow-lg"
         >
           <h3 className="text-3xl font-bold mb-4">
             Welcome to the Student Security Operations Center (SOC) @ Cal Poly
