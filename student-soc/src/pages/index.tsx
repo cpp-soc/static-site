@@ -7,7 +7,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto p-4 min-h-screen flex flex-col justify-center items-center bg-transparent">
+      <div className="container mx-auto p-4 flex flex-col justify-center items-center bg-transparent">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
         </motion.div>
       </div>
 
-      <div className="container mx-auto p-4 min-h-screen flex flex-col justify-center items-center bg-transparent">
+      <div className="container mx-auto p-4 flex flex-col justify-center items-center bg-transparent">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
