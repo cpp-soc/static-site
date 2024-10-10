@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const baseURL = 'https://cppsoc.xyz/assets/carousel/';
 const images = [
@@ -19,10 +20,20 @@ const ImageCarousel: React.FC = () => {
   };
 
   return (
-    <div className="image-carousel">
-      <button onClick={prevImage}>Previous</button>
-      <img src={`${baseURL}${images[currentIndex]}`} alt={`Slide ${currentIndex}`} className="carousel-image" />
-      <button onClick={nextImage}>Next</button>
+    <div className="image-carousel flex items-center">
+      <button onClick={prevImage} className="p-2">
+        &#9664; {/* Left arrow */}
+      </button>
+      <Image 
+        src={`${baseURL}${images[currentIndex]}`} 
+        alt={`Slide ${currentIndex}`} 
+        width={800} 
+        height={600} 
+        className="carousel-image mx-4" 
+      />
+      <button onClick={nextImage} className="p-2">
+        &#9654; {/* Right arrow */}
+      </button>
     </div>
   );
 };
