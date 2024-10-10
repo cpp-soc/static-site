@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+const baseURL = 'https://cppsoc.xyz/assets/carousel/';
 const images = [
   '1.jpg',
   'IMG_3584.jpg',
@@ -20,7 +21,7 @@ const ImageCarousel: React.FC = () => {
   return (
     <div className="image-carousel">
       <button onClick={prevImage}>Previous</button>
-      <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} className="carousel-image" />
+      <img src={`${baseURL}${images[currentIndex]}`} alt={`Slide ${currentIndex}`} className="carousel-image" />
       <button onClick={nextImage}>Next</button>
     </div>
   );
