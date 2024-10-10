@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
     <>
       <Head>
         <title>Projects - Student Soc</title>
-        <meta name="description" content="Projects page for Student Soc" />
+        <meta name="description" content="Project's for The Student Security Operations Center" />
       </Head>
       <Navbar />
       <div className="container mx-auto p-4 min-h-screen flex flex-col justify-center items-center bg-transparent">
