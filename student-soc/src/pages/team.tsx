@@ -12,7 +12,6 @@ const Team: React.FC = () => {
       <Head>
         <title>Meet the SOC</title>
         <meta name="description" content="Meet The Student Security Operations Center (SOC)" />
-      </Head>" />
       </Head>
       <Navbar />
       <div className="container mx-auto p-4 min-h-screen flex flex-col justify-center items-center">
