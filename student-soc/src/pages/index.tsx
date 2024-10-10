@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
+import ImageCarousel from '@/components/imageCarousel';
 import { motion } from 'framer-motion';
 
 const HomePage: React.FC = () => {
@@ -13,6 +14,7 @@ const HomePage: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="mt-8 p-6 bg-gray-800 text-white rounded-lg shadow-lg"
         >
+          <ImageCarousel />
           <h3 className="text-3xl font-bold mb-4">Welcome to the Student Security Operations Center (SOC) @ Cal Poly Pomona</h3>
           <p className="text-lg mb-4">
             Our mission is to monitor the Student Data Center (SDC) and improve its security posture by continuously monitoring logs using System Information and Event Monitoring technologies like Splunk, IBM QRadar and Microsoft Sentinel.
