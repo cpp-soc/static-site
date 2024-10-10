@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 const baseURL = 'https://cppsoc.xyz/assets/carousel/';
 const images = [
   '1.jpg',
-  'IMG_3584.jpg',
-  'IMG_3604.jpg'
+  'IMG_3584.JPG',
+  'IMG_3604.JPG'
 ];
 
 const ImageCarousel: React.FC = () => {
