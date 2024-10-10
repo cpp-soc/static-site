@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Projects - Student Soc</title>
+        <title>SOC - Projects</title>
         <meta name="description" content="Project's for The Student Security Operations Center" />
       </Head>
       <Navbar />

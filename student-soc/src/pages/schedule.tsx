@@ -7,7 +7,7 @@ const Schedule: React.FC = () => {
     <>
       <Navbar />
       <div className="container mx-auto p-4 min-h-screen flex flex-col items-center bg-transparent">
-        <h2 className="text-3xl font-bold mb-4 gradient-text">Event Schedule</h2>
+        <h2 className="text-6xl font-bold text-blue-600 mt-8">Event Schedule</h2>
         
         <h3 className="text-2xl font-bold mb-2">Daily SOC Operations</h3>
         <p className="mb-4">SOC Location: CLA Building 98 C5-15</p>
