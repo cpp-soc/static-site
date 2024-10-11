@@ -40,6 +40,9 @@ const HomePage: React.FC = () => {
             relevant skills that they will need to give them a head start on
             their Cybersecurity careers.
           </p>
+          <p className="text-lg">
+            To have a sneak peak at what we are doing at the SOC, check out our <a href="wiki.cppsoc.xyz">Wiki!</a>.
+          </p>
         </motion.div>
       </div>
     </>
