@@ -14,7 +14,7 @@ const ContactPage: React.FC = () => {
           className="mt-8 p-6 bg-gray-800 text-white rounded-lg shadow-lg w-full lg:w-2/3"
         >
           <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
-          <form className="space-y-4">
+{/*           <form className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-gray-300">Name</label>
               <input type="text" className="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
@@ -28,7 +28,10 @@ const ContactPage: React.FC = () => {
               <textarea className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"></textarea>
             </div>
             <button type="submit" className="px-4 py-2 bg-black text-white rounded-md">Submit</button>
-          </form>
+          </form> */}
+          <div className="container mx-auto p-4 flex flex-col justify-center items-center bg-transparent">
+            Email us directly! <a href="mailto:cpp.soc.club@gmail.com">cpp.soc.club@gmail.com</a>
+          </div>
         </motion.div>
         <div className="mt-8 lg:mt-0 lg:ml-8 flex flex-col items-center lg:w-1/3">
           <div className="mb-8">
