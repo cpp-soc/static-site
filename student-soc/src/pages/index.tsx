@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
             their Cybersecurity careers.
           </p>
           <p className="text-lg">
-            To have a sneak peak at what we are doing at the SOC, check out our <a href="https://wiki.cppsoc.xyz">Wiki!</a>.
+            To have a sneak peak at what we are doing at the SOC, check out our <a href="https://wiki.cppsoc.xyz"><u>Wiki!</u></a>.
           </p>
         </motion.div>
       </div>
