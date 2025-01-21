@@ -31,7 +31,7 @@ const Schedule: React.FC = () => {
             ))}
           </ul>
 
-          <h3 className="text-2xl font-bold mb-2">BOTS Event</h3>
+{/*           <h3 className="text-2xl font-bold mb-2">BOTS Event</h3>
           <p className="mb-4">
             The training will be hosted on the following drop-in hours starting
             Oct 15 - Oct 30:
@@ -46,7 +46,7 @@ const Schedule: React.FC = () => {
                 <span>{item.time}</span>
               </li>
             ))}
-          </ul>
+          </ul> */}
         </motion.div>
       </div>
     </>
