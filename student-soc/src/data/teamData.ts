@@ -21,34 +21,13 @@ const teamData = [
         },
       },
       {
-        name: 'Armin Erika Polanco',
+        name: 'Kenneth Cher',
         year: "Senior",
-        program: 'Computer Science',
-        description: 'Vice President of Operations',
-        picture: 'https://cppsoc.xyz/assets/2024-team/vp-operations.jpg',
-        media: {
-          linkedin: 'https://www.linkedin.com/in/arminerika//',
-          github: 'https://github.com/arminerika',
-        },
-      },
-      {
-        name: 'Ari Torczon',
-        year: "Junior",
         program: 'Computer Information Systems',
-        description: 'Vice President of Finance',
-        picture: 'https://cppsoc.xyz/assets/2024-team/vp-finance.jpg',
+        description: 'Security Engineer',
+        picture: 'https://cppsoc.xyz/assets/2024-team/1707181149301.jpg',
         media: {
-          linkedin: 'https://www.linkedin.com/in/aritorczon/',
-        },
-      },
-      {
-        name: 'Jake Ludlow',
-        year: "Senior",
-        program: 'Computer Science',
-        description: 'Scheduler',
-        picture: 'https://cppsoc.xyz/assets/2024-team/scheduler3.png',
-        media: {
-          linkedin: 'https://www.linkedin.com/in/jakeludlow/',
+          linkedin: 'https://www.linkedin.com/in/kenneth-cher/',
         },
       },
       {
