@@ -7,6 +7,7 @@ interface TeamCardProps {
   name: string;
   year: string;
   program: string;
+  role: string;
   description: string;
   picture: string;
   media: {
@@ -18,8 +19,15 @@ interface TeamCardProps {
 }
 
 
-const TeamCard: React.FC<TeamCardProps> = ({ name, year, program, description, picture, media }) => {
+const TeamCard: React.FC<TeamCardProps> = ({ name, year, program, role, description, picture, media }) => {
   const [showModal, setShowModal] = useState(false);
+
+  // Truncate description for card view
+  const maxDescLength = 110;
+
+  const shortDescription = description.length > maxDescLength
+    ? description.slice(0, maxDescLength) + '...'
+    : description;
 
   return (
     <>
@@ -27,7 +35,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, year, program, description, p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="bg-white text-gray-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col items-center w-full max-w-xs min-h-[370px] cursor-pointer"
+        className="bg-white text-gray-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col items-center w-full max-w-xs min-h-[370px] h-[400px] cursor-pointer"
         onClick={() => setShowModal(true)}
       >
         <Image
@@ -39,7 +47,8 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, year, program, description, p
           quality={100}
         />
   <h2 className="text-xl font-bold text-blue-600 mb-1 text-center">{name}</h2>
-  <p className="text-md font-medium mb-2 text-center">{description}</p>
+  <p className="text-md font-semibold mb-1 text-center text-gray-700">{role}</p>
+  {/* <p className="text-md font-medium mb-2 text-center">{shortDescription}</p> */}
         <div className="flex justify-center space-x-4 mt-2">
           {media.linkedin && (
             <a href={media.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-blue-700" onClick={e => e.stopPropagation()}>
@@ -77,6 +86,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, year, program, description, p
             />
             <h2 className="text-2xl font-bold text-blue-600 mb-2 text-center">{name}</h2>
             <p className="text-md font-medium mb-1 text-center">{year} &ndash; {program}</p>
+            <p className="text-md font-semibold mb-2 text-center text-gray-700">{role}</p>
             <p className="text-base text-gray-700 mb-3 text-center">{description}</p>
             <div className="flex justify-center space-x-4 mt-2">
               {media.linkedin && (
