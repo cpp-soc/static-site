@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -24,10 +23,6 @@ const Team: React.FC = () => {
 
   return (
     <>
-      <Head>
-        <title>Meet the Team - Student SOC</title>
-        <meta name="description" content="Meet The Student Security Operations Center (SOC)" />
-      </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         {/* Hero Section */}
