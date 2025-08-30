@@ -14,34 +14,37 @@ const FAQ: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto p-4 min-h-screen flex flex-col justify-center items-center bg-transparent">
+      <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         <Head>
-          <title>FAQ - Student Soc</title>
-          <meta name="description" content="FAQ page for Student Soc" />
+          <title>FAQ - Student SOC</title>
+          <meta name="description" content="FAQ page for Student SOC" />
         </Head>
-        <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+        <div className="container mx-auto px-4 py-16 flex flex-col items-center justify-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mt-8 p-6 bg-gray-800 text-white rounded-lg shadow-lg"
+            transition={{ duration: 0.8 }}
+            className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-8"
           >
-            <h1 className="text-6xl font-bold text-blue-600">FAQ</h1>
-            <p className="mt-3 text-2xl text-white">
-              Frequently Asked Questions
+            <h1 className="text-5xl font-bold mb-6 leading-tight text-yellow-400 text-center">
+              Frequently Asked <span className="text-black">Questions</span>
+            </h1>
+            <p className="text-xl mb-8 text-gray-700 text-center">
+              Find answers to common questions about the Student SOC, our mission, and how you can get involved.
             </p>
-            <div className="w-full max-w-2xl mt-8">
+            <div className="w-full">
               {faqData.map((item, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="mt-4 p-4 bg-white rounded-lg shadow-lg cursor-pointer"
+                  className="mb-4 p-4 bg-gray-100 rounded-lg shadow-lg cursor-pointer border border-gray-200 hover:bg-yellow-50"
                   onClick={() => toggleExpand(index)}
                 >
-                  <h3 className="text-xl font-bold text-black">
+                  <h3 className="text-xl font-semibold text-black flex items-center justify-between">
                     {item.question}
+                    <span className="ml-2 text-yellow-400">{expandedIndex === index ? '-' : '+'}</span>
                   </h3>
                   {expandedIndex === index && (
                     <motion.div
@@ -50,14 +53,14 @@ const FAQ: React.FC = () => {
                       transition={{ duration: 0.3 }}
                       className="mt-2 text-left"
                     >
-                      <p className="text-lg text-black">{item.answer}</p>
+                      <p className="text-lg text-gray-800">{item.answer}</p>
                     </motion.div>
                   )}
                 </motion.div>
               ))}
             </div>
           </motion.div>
-        </main>
+        </div>
       </div>
     </>
   );
