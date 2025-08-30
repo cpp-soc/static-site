@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -7,19 +6,6 @@ import Image from 'next/image';
 const ContactPage: React.FC = () => {
   return (
     <>
-      <Head>
-        <title>Contact | Cal Poly Pomona Cybersecurity SOC Club</title>
-        <meta name="description" content="Contact the Cal Poly Pomona Student Security Operations Center (SOC) for cybersecurity education, events, and community. Email, Discord, and Linktree available." />
-        <meta property="og:title" content="Contact | Cal Poly Pomona Cybersecurity SOC Club" />
-        <meta property="og:description" content="Get in touch with the Student SOC at Cal Poly Pomona. Connect for cybersecurity events, education, and community." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://cppsoc.xyz/contact" />
-        <meta property="og:image" content="/public/assets/SOC.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact | Cal Poly Pomona Cybersecurity SOC Club" />
-        <meta name="twitter:description" content="Contact the Student SOC for cybersecurity education and events at Cal Poly Pomona." />
-        <meta name="twitter:image" content="/public/assets/SOC.png" />
-      </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         <div className="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center justify-center">

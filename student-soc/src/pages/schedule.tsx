@@ -1,6 +1,5 @@
 
 import React from "react";
-import Head from "next/head";
 import Link from "next/link";
 import eventData from "../data/schedule";
 import Navbar from "@/components/Navbar";
@@ -10,19 +9,6 @@ import { motion } from "framer-motion";
 const Schedule: React.FC = () => {
   return (
     <>
-      <Head>
-        <title>Schedule | Cal Poly Pomona Cybersecurity SOC Club</title>
-        <meta name="description" content="View the event schedule for Cal Poly Pomona's Student Security Operations Center (SOC). Stay updated on cybersecurity activities and club events." />
-        <meta property="og:title" content="Schedule | Cal Poly Pomona Cybersecurity SOC Club" />
-        <meta property="og:description" content="See the latest cybersecurity events and daily SOC operations at Cal Poly Pomona." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://cppsoc.xyz/schedule" />
-        <meta property="og:image" content="/public/assets/SOC.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Schedule | Cal Poly Pomona Cybersecurity SOC Club" />
-        <meta name="twitter:description" content="Stay updated on cybersecurity events and SOC operations at Cal Poly Pomona." />
-        <meta name="twitter:image" content="/public/assets/SOC.png" />
-      </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         {/* Hero Section */}

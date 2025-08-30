@@ -16,17 +16,8 @@ const FAQ: React.FC = () => {
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         <Head>
-          <title>FAQ | Cal Poly Pomona Cybersecurity SOC Club</title>
-          <meta name="description" content="Frequently asked questions about the Cal Poly Pomona Student Security Operations Center (SOC), cybersecurity education, and club activities." />
-          <meta property="og:title" content="FAQ | Cal Poly Pomona Cybersecurity SOC Club" />
-          <meta property="og:description" content="Find answers to common questions about cybersecurity, SOC operations, and student involvement at Cal Poly Pomona." />
-          <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://cppsoc.xyz/faq" />
-          <meta property="og:image" content="/public/assets/SOC.png" />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="FAQ | Cal Poly Pomona Cybersecurity SOC Club" />
-          <meta name="twitter:description" content="Frequently asked questions about cybersecurity and SOC club at Cal Poly Pomona." />
-          <meta name="twitter:image" content="/public/assets/SOC.png" />
+          <title>FAQ - Student SOC</title>
+          <meta name="description" content="FAQ page for Student SOC" />
         </Head>
         <div className="container mx-auto px-4 py-16 flex flex-col items-center justify-center">
           <motion.div
