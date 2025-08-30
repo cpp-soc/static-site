@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
             className="lg:w-1/2 mb-8 lg:mb-0"
           >
             <h1 className="text-5xl font-bold mb-6 leading-tight">
-              Welcome to the <span className="text-black">Student SOC</span> @ Cal Poly Pomona
+              Welcome to the <span className="text-yellow-400">Student SOC</span> @ Cal Poly Pomona
             </h1>
             <p className="text-xl mb-6 leading-relaxed">
               Empowering the next generation of cybersecurity professionals through hands-on monitoring of the Student Data Center using cutting-edge tools like Splunk, IBM QRadar, and Microsoft Sentinel.
