@@ -21,17 +21,17 @@ const ImageCarousel: React.FC = () => {
 
   return (
     <div className="image-carousel flex items-center">
-      <button onClick={prevImage} className="p-2">
+      <button onClick={prevImage} className="p-2 bg-black text-white rounded hover:bg-gray-800 transition">
         &#9664; {/* Left arrow */}
       </button>
       <Image 
         src={`${baseURL}${images[currentIndex]}`} 
         alt={`Slide ${currentIndex}`} 
-        width={800} 
-        height={600} 
-        className="carousel-image mx-4" 
+        width={600} 
+        height={400} 
+        className="carousel-image mx-4 rounded-lg shadow-lg" 
       />
-      <button onClick={nextImage} className="p-2">
+      <button onClick={nextImage} className="p-2 bg-black text-white rounded hover:bg-gray-800 transition">
         &#9654; {/* Right arrow */}
       </button>
     </div>

@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Navbar: React.FC = () => {
   return (
     
-    <nav className="bg-gradient-to-r from-gray-700 to-gray-900 p-4">
+    <nav className="bg-black p-4">
       <link rel="icon" href="/favicon.ico" />
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-2xl font-bold">
