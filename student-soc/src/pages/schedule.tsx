@@ -1,5 +1,6 @@
 
 import React from "react";
+import Link from "next/link";
 import eventData from "../data/schedule";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -64,12 +65,11 @@ const Schedule: React.FC = () => {
               >
                 Visit Our Wiki
               </a>
-              <a
-                href="/contact"
-                className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center"
-              >
-                Contact Us
-              </a>
+                <Link href="/contact" passHref legacyBehavior>
+                  <a className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center">
+                    Contact Us
+                  </a>
+                </Link>
             </div>
           </motion.div>
         </div>
