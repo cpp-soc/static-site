@@ -11,8 +11,17 @@ const Projects: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Projects - Student SOC</title>
-        <meta name="description" content="Projects for The Student Security Operations Center" />
+        <title>Projects | Cal Poly Pomona Cybersecurity SOC Club</title>
+        <meta name="description" content="Explore cybersecurity projects by the Cal Poly Pomona Student Security Operations Center (SOC). Learn about student-led initiatives and research." />
+        <meta property="og:title" content="Projects | Cal Poly Pomona Cybersecurity SOC Club" />
+        <meta property="og:description" content="Discover cybersecurity projects and student-led initiatives at Cal Poly Pomona SOC." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cppsoc.xyz/projects" />
+        <meta property="og:image" content="/public/assets/SOC.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Projects | Cal Poly Pomona Cybersecurity SOC Club" />
+        <meta name="twitter:description" content="Explore cybersecurity projects and research at Cal Poly Pomona SOC." />
+        <meta name="twitter:image" content="/public/assets/SOC.png" />
       </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">

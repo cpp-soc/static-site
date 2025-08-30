@@ -25,8 +25,17 @@ const Team: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Meet the Team - Student SOC</title>
-        <meta name="description" content="Meet The Student Security Operations Center (SOC)" />
+        <title>Meet the Team | Cal Poly Pomona Cybersecurity SOC Club</title>
+        <meta name="description" content="Meet the student and faculty team behind Cal Poly Pomona's Student Security Operations Center (SOC). Learn about cybersecurity leadership and club members." />
+        <meta property="og:title" content="Meet the Team | Cal Poly Pomona Cybersecurity SOC Club" />
+        <meta property="og:description" content="Discover the students and faculty leading cybersecurity at Cal Poly Pomona SOC." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cppsoc.xyz/team" />
+        <meta property="og:image" content="/public/assets/SOC.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Meet the Team | Cal Poly Pomona Cybersecurity SOC Club" />
+        <meta name="twitter:description" content="Meet the cybersecurity team and faculty at Cal Poly Pomona SOC." />
+        <meta name="twitter:image" content="/public/assets/SOC.png" />
       </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
