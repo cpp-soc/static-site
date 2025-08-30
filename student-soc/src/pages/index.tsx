@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer"; 
 import ImageCarousel from "@/components/imageCarousel";
@@ -21,24 +22,22 @@ const HomePage: React.FC = () => {
               Welcome to the <span className="text-yellow-400">Student SOC</span> @ Cal Poly Pomona
             </h1>
             <p className="text-xl mb-6 leading-relaxed">
-              Empowering the next generation of cybersecurity professionals through hands-on monitoring of the Student Data Center using cutting-edge tools like Splunk, IBM QRadar, and Microsoft Sentinel.
+              Empowering the next generation of cybersecurity professionals through hands-on monitoring of the Student Data Center using cutting-edge tools like Splunk and Rapid7.
             </p>
             <p className="text-lg mb-8">
               Join us to gain real-world skills and kickstart your career in cybersecurity.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="/team"
-                className="bg-black hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
-              >
-                Meet the Team
-              </a>
-              <a
-                href="/projects"
-                className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
-              >
-                Our Projects
-              </a>
+              <Link href="/team" passHref legacyBehavior>
+                <a className="bg-black hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                  Meet the Team
+                </a>
+              </Link>
+              <Link href="/projects" passHref legacyBehavior>
+                <a className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                  Our Projects
+                </a>
+              </Link>
             </div>
           </motion.div>
           <motion.div
@@ -61,7 +60,7 @@ const HomePage: React.FC = () => {
           >
             <h2 className="text-4xl font-bold mb-6">What We Do</h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              As Cal Poly Pomona&apos;s premier cybersecurity initiative, we operate a full-fledged Security Operations Center that monitors, detects, and responds to security threats in real-time. Our team of dedicated students works around the clock to protect the university&apos;s digital infrastructure.
+              As Cal Poly Pomona&apos;s premier cybersecurity initiative, we operate a student-led Security Operations Center that monitors, detects, and responds to security threats in real-time. Our team of dedicated students works around the clock to protect the university&apos;s digital infrastructure.
             </p>
           </motion.div>
 
@@ -112,9 +111,9 @@ const HomePage: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-center">Incident Response</h3>
+              <h3 className="text-xl font-semibold mb-3 text-center">Learning Environment</h3>
               <p className="text-gray-600 text-center">
-                Rapid response to security incidents with documented procedures, forensic analysis, and coordinated remediation efforts to minimize impact.
+                The Center provides an open space for students to not only learn about security but as a ground for collaboration and innovation.
               </p>
             </motion.div>
 
@@ -129,9 +128,9 @@ const HomePage: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-center">Security Training</h3>
+              <h3 className="text-xl font-semibold mb-3 text-center">Training</h3>
               <p className="text-gray-600 text-center">
-                Comprehensive training programs for students to develop practical cybersecurity skills and prepare for careers in information security.
+                Comprehensive programs and labs that beginners and students can participate in to enhance their skills.
               </p>
             </motion.div>
 
@@ -166,7 +165,7 @@ const HomePage: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3 text-center">Tool Integration</h3>
               <p className="text-gray-600 text-center">
-                Integration and management of industry-leading security tools including Splunk, IBM QRadar, Microsoft Sentinel, and custom monitoring solutions.
+                Integration and management of industry-leading security tools including Splunk, Rapid7, and custom monitoring solutions.
               </p>
             </motion.div>
           </div>
@@ -185,21 +184,22 @@ const HomePage: React.FC = () => {
               <a
                 href="https://wiki.cppsoc.xyz"
                 className="bg-black hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                 </svg>
                 Visit Our Wiki
               </a>
-              <a
-                href="/projects"
-                className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center"
-              >
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                </svg>
-                View Projects
-              </a>
+              <Link href="/projects" passHref legacyBehavior>
+                <a className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center">
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                  </svg>
+                  View Projects
+                </a>
+              </Link>
             </div>
           </motion.div>
         </div>
