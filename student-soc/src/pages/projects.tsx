@@ -63,18 +63,18 @@ const Projects: React.FC = () => {
             Want to learn more about our projects or get involved? Visit our documentation or contact us!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="https://wiki.cppsoc.xyz"
               className="bg-black hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center"
             >
               Visit Our Wiki
-            </a>
-            <a
-              href="/contact"
-              className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center"
-            >
-              Contact Us
-            </a>
+            </Link>
+              <Link
+                href="/contact"
+                className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center"
+              >
+                Contact Us
+              </Link>
           </div>
         </motion.div>
       </div>
