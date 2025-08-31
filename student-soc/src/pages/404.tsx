@@ -21,7 +21,10 @@ const Custom404: React.FC = () => {
       <Head>
         <title>404 - Page Not Found | CPP SOC</title>
         <meta name="robots" content="index,follow" />
-        <meta name="description" content="404 page for CPP SOC. The page you are looking for does not exist." />
+        <meta
+          name="description"
+          content="404 page for CPP SOC. The page you are looking for does not exist."
+        />
       </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900 flex flex-col justify-center items-center">
@@ -31,9 +34,12 @@ const Custom404: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <h1 className="text-5xl font-bold mb-6 leading-tight text-yellow-400">404 - Page Not Found</h1>
+          <h1 className="text-5xl font-bold mb-6 leading-tight text-yellow-400">
+            404 - Page Not Found
+          </h1>
           <p className="text-xl mb-6 leading-relaxed">
-            Sorry, the page you&apos;re looking for doesn&apos;t exist.<br />
+            Sorry, the page you&apos;re looking for doesn&apos;t exist.
+            <br />
             You will be redirected to the home page shortly.
           </p>
           <Link
@@ -46,7 +52,7 @@ const Custom404: React.FC = () => {
       </div>
       <Footer />
     </div>
-      );
-  }
+  );
+};
 
 export default Custom404;
