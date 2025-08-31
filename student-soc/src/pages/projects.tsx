@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -10,10 +9,6 @@ import projectsData from "@/data/projectsData";
 const Projects: React.FC = () => {
   return (
     <>
-      <Head>
-        <title>Projects - Student SOC</title>
-        <meta name="description" content="Projects for The Student Security Operations Center" />
-      </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         {/* Hero Section */}

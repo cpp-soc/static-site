@@ -69,6 +69,24 @@ const Navbar: React.FC = () => {
             </svg>
             <span>FAQ</span>
           </Link>
+          {/* More dropdown */}
+          <div className="relative group">
+            <button className="text-white hover:bg-gray-700 px-4 py-2 rounded-lg transition duration-300 font-medium flex items-center space-x-2 focus:outline-none">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+              </svg>
+              <span>More</span>
+              <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div className="absolute left-0 mt-2 w-40 bg-black rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+              <Link href="/discord" className="block px-4 py-2 text-white hover:bg-gray-700 rounded-t-lg transition duration-300">Discord</Link>
+              <Link href="/links" className="block px-4 py-2 text-white hover:bg-gray-700 transition duration-300">Links</Link>
+              <Link href="/sign-in" className="block px-4 py-2 text-white hover:bg-gray-700 transition duration-300">Sign-in</Link>
+              <Link href="/temp" className="block px-4 py-2 text-white hover:bg-gray-700 rounded-b-lg transition duration-300">Temp</Link>
+            </div>
+          </div>
         </motion.div>
         <div className="md:hidden">
           <button className="text-white focus:outline-none">
