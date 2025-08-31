@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 const Custom404: React.FC = () => {
   const router = useRouter();
@@ -16,7 +17,12 @@ const Custom404: React.FC = () => {
   }, [router]);
 
   return (
-    <>
+    <div>
+      <Head>
+        <title>404 - Page Not Found | CPP SOC</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="description" content="404 page for CPP SOC. The page you are looking for does not exist." />
+      </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900 flex flex-col justify-center items-center">
         <motion.div
@@ -39,8 +45,8 @@ const Custom404: React.FC = () => {
         </motion.div>
       </div>
       <Footer />
-    </>
-  );
-};
+    </div>
+      );
+  }
 
 export default Custom404;
