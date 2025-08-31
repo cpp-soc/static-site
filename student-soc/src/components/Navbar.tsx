@@ -9,6 +9,7 @@ import { useState } from 'react';
 
 const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
   return (
     <motion.nav 
       initial={{ opacity: 0 }}
@@ -64,16 +65,34 @@ const Navbar: React.FC = () => {
             <span>FAQ</span>
           </Link>
           {/* More dropdown */}
-          <div className="relative group">
-            {/* ...existing code... */}
-            <span>More</span>
-            {/* ...existing code... */}
-            <div className="absolute left-0 mt-2 w-40 bg-black rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-              <Link href="/discord" className="block px-4 py-2 text-white hover:bg-gray-700 rounded-t-lg transition duration-300">Discord</Link>
-              <Link href="/links" className="block px-4 py-2 text-white hover:bg-gray-700 transition duration-300">Links</Link>
-              <Link href="/sign-in" className="block px-4 py-2 text-white hover:bg-gray-700 transition duration-300">Sign-in</Link>
-              <Link href="/temp" className="block px-4 py-2 text-white hover:bg-gray-700 rounded-b-lg transition duration-300">Temp</Link>
-            </div>
+          <div className="relative">
+            <button
+              className="flex items-center text-white hover:bg-gray-700 px-4 py-2 rounded-lg transition duration-300 font-medium space-x-2 focus:outline-none"
+              onClick={() => setMoreOpen((prev) => !prev)}
+              aria-haspopup="true"
+              aria-expanded={moreOpen}
+            >
+              <span>More</span>
+              <svg className={`w-4 h-4 ml-1 transition-transform duration-300 ${moreOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {moreOpen && (
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.3 }}
+                className="absolute left-0 mt-2 w-40 bg-black rounded-lg shadow-2xl z-20"
+                role="menu"
+                tabIndex={-1}
+              >
+                <Link href="/discord" className="block px-4 py-2 text-white hover:bg-gray-700 rounded-t-lg transition duration-300">Discord</Link>
+                <Link href="/links" className="block px-4 py-2 text-white hover:bg-gray-700 transition duration-300">Links</Link>
+                <Link href="/sign-in" className="block px-4 py-2 text-white hover:bg-gray-700 transition duration-300">Sign-in</Link>
+                <Link href="/temp" className="block px-4 py-2 text-white hover:bg-gray-700 rounded-b-lg transition duration-300">Temp</Link>
+              </motion.div>
+            )}
           </div>
         </motion.div>
         {/* Mobile Menu Button */}
@@ -95,10 +114,13 @@ const Navbar: React.FC = () => {
           <Link href="/contact" className="text-white hover:bg-gray-700 px-4 py-2 rounded-lg transition duration-300 font-medium">Contact</Link>
           <Link href="/faq" className="text-white hover:bg-gray-700 px-4 py-2 rounded-lg transition duration-300 font-medium">FAQ</Link>
           <div className="border-t border-gray-700 my-2"></div>
-          <Link href="/discord" className="text-white hover:bg-gray-700 px-4 py-2 rounded-lg transition duration-300 font-medium">Discord</Link>
-          <Link href="/links" className="text-white hover:bg-gray-700 px-4 py-2 rounded-lg transition duration-300 font-medium">Links</Link>
-          <Link href="/sign-in" className="text-white hover:bg-gray-700 px-4 py-2 rounded-lg transition duration-300 font-medium">Sign-in</Link>
-          <Link href="/temp" className="text-white hover:bg-gray-700 px-4 py-2 rounded-lg transition duration-300 font-medium">Temp</Link>
+          <div className="flex flex-col space-y-1">
+            <span className="text-gray-400 px-4 py-1">More</span>
+            <Link href="/discord" className="text-white hover:bg-gray-700 px-4 py-2 rounded-lg transition duration-300 font-medium">Discord</Link>
+            <Link href="/links" className="text-white hover:bg-gray-700 px-4 py-2 rounded-lg transition duration-300 font-medium">Links</Link>
+            <Link href="/sign-in" className="text-white hover:bg-gray-700 px-4 py-2 rounded-lg transition duration-300 font-medium">Sign-in</Link>
+            <Link href="/temp" className="text-white hover:bg-gray-700 px-4 py-2 rounded-lg transition duration-300 font-medium">Temp</Link>
+          </div>
         </div>
       )}
     </motion.nav>
