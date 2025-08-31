@@ -28,16 +28,12 @@ const HomePage: React.FC = () => {
               Join us to gain real-world skills and kickstart your career in cybersecurity.
             </p>
             <div className="flex space-x-4">
-              <Link href="/team" passHref legacyBehavior>
-                <a className="bg-black hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
-                  Meet the Team
-                </a>
-              </Link>
-              <Link href="/projects" passHref legacyBehavior>
-                <a className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
-                  Our Projects
-                </a>
-              </Link>
+                  <Link href="/team" className="bg-black hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                    Meet the Team
+                  </Link>
+                  <Link href="/projects" className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                    Our Projects
+                  </Link>
             </div>
           </motion.div>
           <motion.div
@@ -192,13 +188,11 @@ const HomePage: React.FC = () => {
                 </svg>
                 Visit Our Wiki
               </a>
-              <Link href="/projects" passHref legacyBehavior>
-                <a className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center">
-                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                  </svg>
-                  View Projects
-                </a>
+              <Link href="/projects" className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center">
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                </svg>
+                View Projects
               </Link>
             </div>
           </motion.div>

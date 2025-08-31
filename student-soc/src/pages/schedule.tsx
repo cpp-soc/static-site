@@ -65,10 +65,8 @@ const Schedule: React.FC = () => {
               >
                 Visit Our Wiki
               </a>
-                <Link href="/contact" passHref legacyBehavior>
-                  <a className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center">
-                    Contact Us
-                  </a>
+                <Link href="/contact" className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center">
+                  Contact Us
                 </Link>
             </div>
           </motion.div>
