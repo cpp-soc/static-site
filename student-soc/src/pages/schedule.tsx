@@ -12,7 +12,7 @@ const Schedule: React.FC = () => {
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         {/* Hero Section */}
-        <div className="container mx-auto px-4 py-16 flex flex-col items-center justify-center">
+    <div className="container mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-10 md:py-16 flex flex-col items-center justify-center">
           <motion.div
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -35,7 +35,7 @@ const Schedule: React.FC = () => {
             className="w-full"
           >
             <h2 className="text-3xl font-bold mb-4 text-center text-yellow-400">Daily SOC Operations</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-center mb-8 sm:mb-12">
               {eventData.dailySOCOperations.map((item, index) => (
                 <div
                   key={index}

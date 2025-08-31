@@ -11,12 +11,12 @@ const HomePage: React.FC = () => {
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         {/* Hero Section */}
-        <div className="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center justify-between">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-10 md:py-16 flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="lg:w-1/2 mb-8 lg:mb-0"
+            className="w-full lg:w-1/2 mb-8 lg:mb-0"
           >
             <h1 className="text-5xl font-bold mb-6 leading-tight">
               Welcome to the <span className="text-yellow-400">Student SOC</span> @ Cal Poly Pomona
@@ -40,14 +40,14 @@ const HomePage: React.FC = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:w-1/2"
+            className="w-full lg:w-1/2"
           >
             <ImageCarousel />
           </motion.div>
         </div>
 
         {/* What We Do Section */}
-        <div className="container mx-auto px-4 py-16">
+  <div className="container mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-10 md:py-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ const HomePage: React.FC = () => {
           </motion.div>
 
           {/* Key Activities Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-6 sm:mb-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}

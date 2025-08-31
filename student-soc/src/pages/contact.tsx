@@ -8,7 +8,7 @@ const ContactPage: React.FC = () => {
     <>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
-        <div className="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center justify-center">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-10 md:py-16 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-0">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

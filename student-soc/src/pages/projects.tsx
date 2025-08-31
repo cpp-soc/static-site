@@ -28,8 +28,8 @@ const Projects: React.FC = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="container mx-auto px-4 pb-16">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 pb-10 sm:pb-14 md:pb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {projectsData.map((project, index) => (
               <motion.div
                 key={index}

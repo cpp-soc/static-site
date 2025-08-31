@@ -30,7 +30,7 @@ const LinksPage: React.FC = () => {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="container mx-auto px-4 py-16 flex flex-col items-center"
+          className="container mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-10 md:py-16 flex flex-col items-center"
         >
           <h1 className="text-5xl font-bold mb-8 text-center">
             Quick <span className="text-yellow-400">Links</span>
