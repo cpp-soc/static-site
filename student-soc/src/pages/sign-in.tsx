@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const SIGNIN_FORM_URL = "https://forms.gle/your-daily-sign-in-link";
+const SIGNIN_FORM_URL = "https://forms.office.com/r/y6zQAtF9wx";
 
 const SignInPage: React.FC = () => {
   const handleRedirect = () => {
@@ -34,7 +34,7 @@ const SignInPage: React.FC = () => {
             className="mb-6"
           >
             <Image
-              src="/assets/qr/daily-sign-in.png"
+              src="/assets/links/qrforsoc.png"
               alt="Daily Sign-In QR"
               width={180}
               height={180}

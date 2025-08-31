@@ -1,8 +1,8 @@
 export const links = [
   {
     name: "Daily Sign-in",
-    url: "https://forms.gle/your-daily-sign-in-link",
-    qr: "/assets/qr/daily-sign-in.png",
+    url: "https://forms.office.com/r/y6zQAtF9wx",
+    qr: "/assets/links/qrforsoc.png",
   },
   {
     name: "Global Protect User Access Request",
