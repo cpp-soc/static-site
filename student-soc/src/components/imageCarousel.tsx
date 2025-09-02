@@ -6,7 +6,8 @@ const baseURL = 'https://cppsoc.xyz/assets/carousel/';
 const images = [
   '1.jpg',
   'IMG_3584.JPG',
-  'IMG_3604.JPG'
+  'IMG_3604.JPG',
+  'carousel4.jpg'
 ];
 
 const ImageCarousel: React.FC = () => {
