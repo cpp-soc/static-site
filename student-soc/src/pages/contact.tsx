@@ -1,56 +1,53 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const ContactPage: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto p-4 min-h-screen flex flex-col lg:flex-row justify-center items-start bg-transparent">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mt-8 p-6 bg-gray-800 text-white rounded-lg shadow-lg w-full lg:w-2/3"
-        >
-          <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
-{/*           <form className="space-y-4">
-            <div>
-              <label className="block text-sm font-medium text-gray-300">Name</label>
-              <input type="text" className="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+      <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-10 md:py-16 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-0">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="w-full lg:w-2/3 bg-white rounded-lg shadow-lg p-8 mb-8 lg:mb-0"
+          >
+            <h1 className="text-5xl font-bold mb-6 leading-tight text-yellow-400 text-center">
+              Contact <span className="text-black">Us</span>
+            </h1>
+            <p className="text-xl mb-8 text-gray-700 text-center">
+              We&apos;d love to hear from you! Reach out to us via email or join our Discord community.
+            </p>
+            <div className="flex flex-col items-center justify-center">
+              <span className="text-lg mb-2">Email us directly:</span>
+              <a href="mailto:cpp.soc.club@gmail.com" className="text-yellow-400 text-xl font-semibold mb-6">cpp.soc.club@gmail.com</a>
             </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-300">Email</label>
-              <input type="email" className="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+          </motion.div>
+          <div className="w-full lg:w-1/3 flex flex-col items-center justify-center">
+            <div className="mb-8 w-full flex justify-center">
+              <iframe
+                src="https://discord.com/widget?id=1222272548306292827&theme=dark"
+                width="350"
+                height="350"
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                className="rounded-lg shadow-lg"
+                title="Discord Widget"
+              ></iframe>
             </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-300">Message</label>
-              <textarea className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"></textarea>
+            <div className="w-full flex justify-center">
+              <a href="https://linktr.ee/cppsoc" target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="https://assets.production.linktr.ee/profiles/_next/static/logo-assets/default-meta-image.png"
+                  width={350}
+                  height={175}
+                  alt="Linktree"
+                  className="rounded-lg shadow-lg"
+                />
+              </a>
             </div>
-            <button type="submit" className="px-4 py-2 bg-black text-white rounded-md">Submit</button>
-          </form> */}
-          <div className="container mx-auto p-4 flex flex-col justify-center items-center bg-transparent">
-            Email us directly! <a href="mailto:cpp.soc.club@gmail.com">cpp.soc.club@gmail.com</a>
-          </div>
-        </motion.div>
-        <div className="mt-8 lg:mt-0 lg:ml-8 flex flex-col items-center lg:w-1/3">
-          <div className="mb-8">
-            <iframe
-              src="https://discord.com/widget?id=1222272548306292827&theme=dark"
-              width="500"
-              height="500"
-              sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-            ></iframe>
-          </div>
-          <div>
-            <a href="https://linktr.ee/cppsoc">
-              <img
-                src="https://assets.production.linktr.ee/profiles/_next/static/logo-assets/default-meta-image.png"
-                width="500"
-                height="250"
-                alt="Linktree"
-              />
-            </a>
           </div>
         </div>
       </div>
