@@ -10,7 +10,10 @@ const images = [
   'carousel4.jpg',
   'IMG_6844.jpg',
   'IMG_6921.jpg',
-  'IMG_6922.jpg'
+  'IMG_6922.jpg',
+  'IMG_3033.jpg',
+  'IMG_7002.jpg',
+  'IMG_7887.jpg'
 ];
 
 const ImageCarousel: React.FC = () => {
