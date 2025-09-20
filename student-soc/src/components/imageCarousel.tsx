@@ -99,7 +99,9 @@ const ImageCarousel: React.FC = () => {
             onClick={() => { prevImage(); resetTimer(); }} 
             className="absolute left-2 top-1/2 transform -translate-y-1/2 p-3 bg-black bg-opacity-50 text-white rounded-full hover:bg-opacity-75 transition z-10"
           >
-            &#9664;
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
           </button>
         )}
         <div className="w-full h-full overflow-hidden rounded-lg shadow-lg">
@@ -128,7 +130,9 @@ const ImageCarousel: React.FC = () => {
             onClick={() => { nextImage(); resetTimer(); }} 
             className="absolute right-2 top-1/2 transform -translate-y-1/2 p-3 bg-black bg-opacity-50 text-white rounded-full hover:bg-opacity-75 transition z-10"
           >
-            &#9654;
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
           </button>
         )}
       </div>
