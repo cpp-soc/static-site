@@ -10,8 +10,8 @@ export const galleryEvents: GalleryEvent[] = [
   {
     id: "csaf25",
     title: "CSAF 2025",
-    subtitle: "Cybersecurity Awareness Fair 2025",
-    description: "Our annual cybersecurity awareness event bringing together students, faculty, and industry professionals to explore the latest trends in cybersecurity.",
+    subtitle: "The Cybersecurity & Awareness Fair 2025",
+    description: "The Cal Poly Pomona Cybersecurity and Awareness Fair is where awareness and the advancement of the cybersecurity industry is happening along with the recruitment of CPP’s cybersecurity talent.",
     date: "Fall 2025"
   },
   {
