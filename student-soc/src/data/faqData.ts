@@ -13,7 +13,7 @@ export const faqData = [
     },
     {
       question: 'Can I join the student-led SOC, and what are the requirements?',
-      answer: 'Yes, we welcome students who are passionate about cybersecurity to join the SOC. Requirements typically include [insert membership requirements here], and interested students can [insert application process here].',
+      answer: 'Yes, we welcome students who are passionate about cybersecurity to join the SOC.',
     },
     {
       question: 'What are the benefits of joining the student-led SOC?',
@@ -25,11 +25,11 @@ export const faqData = [
     },
     {
       question: 'How often does the SOC host events or workshops?',
-      answer: 'The frequency of SOC events and workshops may vary, but we strive to offer regular opportunities for students to engage with cybersecurity-related content and activities.',
+      answer: 'The SOC is open five days a week, our scheudle is posted on our website and Discord.',
     },
     {
       question: 'How can I stay updated on SOC news and events?',
-      answer: 'You can stay updated by visiting our website regularly, subscribing to our newsletter, or following us on social media platforms.',
+      answer: 'You can stay updated by visiting our Discord!.',
     },
   ];
 
