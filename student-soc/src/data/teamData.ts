@@ -134,6 +134,34 @@ const teamData = [
     group: "SOC",
     teamYear: 2024,
   },
+    {
+    name: "Justin Sulivan-Pascual",
+    year: "",
+    program: "Computer Information Systems",
+    role: "Director of Mitchell Hill Data Center",
+    description:
+      "",
+    picture: "https://media.licdn.com/dms/image/v2/D5603AQFdDQlfQMvR7Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1697516013554?e=1762387200&v=beta&t=ulNC1stKHlvvQYN-rEfjds2xls86Du8lMgxbLWHMmQk",
+    media: {
+      linkedin: "https://www.linkedin.com/in/justinsp/",
+    },
+    group: "SOC",
+    teamYear: 2024,
+  },
+    {
+    name: "Rachel Decastro",
+    year: "",
+    program: "Computer Information Systems",
+    role: "Director of Mitchell Hill Data Center",
+    description:
+      "Working as a director for the Mitchell C. Hill Student Data Center (SDC) has been an incredible experience thus far. Being exposed to real networking equipment hands-on and working with others as a team has helped me solidify my love for the field and give back to others by teaching what I've learned. I get to spend my time creating infrastructure that serves a real, higher purpose of being used by clubs and competition teams, troubleshooting real-life issues, and working towards my passion to grow my skills.",
+    picture: "https://media.licdn.com/dms/image/v2/D5603AQFpJOmB7hDZow/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730597761670?e=1762387200&v=beta&t=D8xI219TAppHifk_zBmBoVXVPc75rWGmNt9z1k1Qksg",
+    media: {
+      linkedin: "https://www.linkedin.com/in/rachel-decastro/",
+    },
+    group: "SDC",
+    teamYear: 2024,
+  },
   {
     name: "Derrick Tran",
     year: "Senior",
