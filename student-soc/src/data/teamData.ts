@@ -56,7 +56,7 @@ const teamData = [
     media: {
       linkedin: "https://www.linkedin.com/in/eric-heng-631468w/",
     },
-    group: "SDC",
+    group: "SOC",
     teamYear: 2025,
   },
   {
