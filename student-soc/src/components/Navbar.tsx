@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="bg-black p-4 shadow-lg"
     >
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/test.ico" />
       <div className="container mx-auto flex justify-between items-center">
         <motion.div 
           initial={{ opacity: 0 }}

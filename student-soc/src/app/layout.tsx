@@ -7,7 +7,7 @@ const Layout: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900 flex flex-col">
       <header className="bg-black text-white p-4">
         <h1 className="text-2xl font-bold">Student Security Operations Center (SOC) @ Cal Poly Pomona</h1>
-        <link rel="icon" href="/logo3.png" />
+        <link rel="icon" href="/test.ico" />
       </header>
       <main className="flex-grow p-4">{children}</main>
       <Footer />
