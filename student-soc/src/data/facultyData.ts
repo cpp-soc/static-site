@@ -24,7 +24,7 @@ const facultyData = [
       },
       {
         name: 'Bill Luong',
-        description: 'Systems Administrator',
+        description: 'System Administrator',
         picture: 'https://www.cpp.edu/cba/digital-innovation/img/bill_luong.jpg',
         media: {
           linkedin: 'https://www.linkedin.com/in/bill-luong/',
