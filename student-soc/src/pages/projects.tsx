@@ -46,32 +46,6 @@ const Projects: React.FC = () => {
             ))}
           </div>
         </div>
-
-        {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
-          className="text-center"
-        >
-          <p className="text-lg mb-6 max-w-2xl mx-auto">
-            Want to learn more about our projects or get involved? Visit our documentation or contact us!
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://wiki.cppsoc.xyz"
-              className="bg-black hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center"
-            >
-              Visit Our Wiki
-            </Link>
-              <Link
-                href="/contact"
-                className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center"
-              >
-                Contact Us
-              </Link>
-          </div>
-        </motion.div>
       </div>
       <Footer />
     </>

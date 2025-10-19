@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Footer from '@/components/Footer';
 
 const ContactPage: React.FC = () => {
   return (
@@ -23,7 +24,7 @@ const ContactPage: React.FC = () => {
             </p>
             <div className="flex flex-col items-center justify-center">
               <span className="text-lg mb-2">Email us directly:</span>
-              <a href="mailto:cpp.soc.club@gmail.com" className="text-yellow-400 text-xl font-semibold mb-6">cpp.soc.club@gmail.com</a>
+              <a href="mailto:cpp.soc.club@gmail.com" className="text-black-400 text-xl font-semibold mb-6">cpp.soc.club@gmail.com</a>
             </div>
           </motion.div>
           <div className="w-full lg:w-1/3 flex flex-col items-center justify-center">
@@ -51,6 +52,7 @@ const ContactPage: React.FC = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

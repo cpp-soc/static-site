@@ -3,6 +3,7 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import faqData from "@/data/faqData";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const FAQ: React.FC = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
@@ -62,6 +63,7 @@ const FAQ: React.FC = () => {
           </motion.div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
