@@ -4,7 +4,7 @@ const teamData = [
     name: "Maxwell Caron",
     year: "Senior",
     program: "Computer Information Systems",
-    role: "SDC - Student Operations Manager",
+    role: "Student Operations Manager",
     description:
       "Gained valuable experience with the Student Data Center by participating in extracurricular competition teams such as CPTC and CCDC, as well as being involved in clubs like SWIFT. This role allowed hands-on work with the infrastructure of the SDC while also exploring a passion for cybersecurity within the SOC.",
     picture: "https://www.cpp.edu/cba/digital-innovation/img/mxwellcro.jpg",
@@ -18,7 +18,7 @@ const teamData = [
     name: "Marshall Ung",
     year: "Senior",
     program: "Computer Engineering",
-    role: "SDC - Student Operations Manager",
+    role: "Student Operations Manager",
     description:
       "Manages the underlying infrastructure used to provide clubs and classrooms compute power that supports student learning. Prior to this position, competed in cybersecurity competitions such as CPTC and CCDC. Plans to pursue a career in consulting, either offensive or defensive.",
     picture:
@@ -33,7 +33,7 @@ const teamData = [
     name: "Roman Arreguin",
     year: "Junior",
     program: "Computer Information Systems",
-    role: "SOC - Student Operations Manager",
+    role: "Student Operations Manager",
     description:
       "Roman Arreguin is a third-year Computer Information Systems major and as a Part-Time Student Operations Manager for both the Student Security Operations Center (SOC) as well as at the Mitchell C. Hill Student-Run Data Center (SDC), is a part of the Hill Family Fellows. In this role, he helps operate the SIEM system within the SOC with the ultimate goal of protecting and supporting the SDC. Through this role, Roman has developed hands-on skills using professional-grade security tools in a real-world environment with tools such as Splunk and Proxmox. After graduation, he plans to work as a security/SOC analyst.",
     picture:
@@ -49,7 +49,7 @@ const teamData = [
     name: "Eric Heng",
     year: "Senior",
     program: "Computer Information Systems",
-    role: "SOC - Student Operations Manager",
+    role: "Student Operations Manager",
     description:
       "Manages infrastructure projects, explores information technology, and contributes to the organization's growth. Enjoys gaining hands-on experience with virtualization, server management, and enterprise security information event management software that are rarely accessible in traditional classroom settings. Plans to pursue a career in networking.",
     picture: "https://www.cpp.edu/cba/digital-innovation/img/erichen2.png",
@@ -63,7 +63,7 @@ const teamData = [
     name: "Nich Rosen",
     year: "Senior",
     program: "Computer Information Systems",
-    role: "SOC - Student Operations Manager",
+    role: "Student Operations Manager",
     description:
       "Leads SOC operations, oversees the configuration, maintenance, and operation of industry-grade SIEM systems and other cybersecurity tools within the SOC. Leads and organizes hands-on training initiatives with the goal of broadening cybersecurity learning opportunities and expanding access for all CPP students. Passionate about threat detection and incident response and aims to pursue a career as a SOC analyst after graduation.",
     picture:
@@ -79,7 +79,7 @@ const teamData = [
     name: "Tommy Phao",
     year: "Senior",
     program: "Computer Information Systems",
-    role: "SOC - Security Engineer",
+    role: "Security Engineer",
     description:
       "From starting as a SOC Volunteer in Spring 2024 to rebuilding the SOC alongside the Student Operations Manager!",
     picture:
@@ -205,7 +205,7 @@ const teamData = [
   {
     name: "Aina Keagy",
     year: "SDC Lead",
-    program: "Student Data Center",
+    program: "",
     role: "SDC Lead",
     description:
       "SDC Leadership 2017-2018. Currently at Twitch - Senior Privacy Manager.",
@@ -217,7 +217,7 @@ const teamData = [
   {
     name: "Kyle Keagy",
     year: "SDC Lead",
-    program: "Student Data Center",
+    program: "",
     role: "SDC Lead",
     description:
       "SDC Leadership 2018-2019. Currently at Cyderes - Practice Director for Microsoft Identity.",
@@ -229,7 +229,7 @@ const teamData = [
   {
     name: "Jonathan Hernandez",
     year: "SDC Lead",
-    program: "Student Data Center",
+    program: "",
     role: "SDC Lead",
     description:
       "SDC Leadership 2019-pandemic. Currently at UCLA - Programmer Analyst.",
@@ -242,7 +242,7 @@ const teamData = [
   {
     name: "Juan Ortega",
     year: "SOC Lead",
-    program: "Security Operations Center",
+    program: "",
     role: "SOC Lead",
     description:
       "SOC Leadership prior to 2017/18. (Unconfirmed, needs verification)",
@@ -254,7 +254,7 @@ const teamData = [
   {
     name: "K Singh",
     year: "SOC Lead",
-    program: "Security Operations Center",
+    program: "",
     role: "SOC Lead",
     description:
       "SOC Leadership 2018-2019 (with Carlos Marquez). Now at Mandiant as Senior Incident Response Consultant. Formerly at CrowdStrike.",
@@ -266,7 +266,7 @@ const teamData = [
   {
     name: "Carlos Marquez",
     year: "SOC Lead",
-    program: "Security Operations Center",
+    program: "",
     role: "SOC Lead",
     description:
       "SOC Leadership 2018-2019 (with K Singh). Currently at CrowdStrike as Security Engineer (prodsec).",
@@ -278,7 +278,7 @@ const teamData = [
   {
     name: "K Singh",
     year: "SOC Lead",
-    program: "Security Operations Center",
+    program: "",
     role: "SOC Lead",
     description:
       "SOC Leadership 2019-pandemic. Now at Mandiant as Senior Incident Response Consultant.",
@@ -291,7 +291,7 @@ const teamData = [
     name: "Jensen",
     year: "",
     program: "",
-    role: "SOC - Student Director",
+    role: "Student Director",
     description: "SOC Leadership pandemic-??? Now at NBCUniversal.",
     picture: "/assets/stockavatar.jpg",
     media: {},

@@ -91,6 +91,7 @@ const Team: React.FC = () => {
                   role={member.role}
                   description={member.description}
                   picture={member.picture}
+                  group={member.group as "SOC" | "SDC"}
                   media={member.media}
                 />
               </motion.div>
