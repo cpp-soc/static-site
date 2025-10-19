@@ -14,7 +14,8 @@ const allYears = Array.from(new Set(teamData.map(m => m.teamYear).filter(Boolean
 
 
 const Team: React.FC = () => {
-  const [selectedYear, setSelectedYear] = useState<number | null>(null);
+  // default behvaior
+  const [selectedYear, setSelectedYear] = useState<number | null>(allYears[0] || null);
 
   // Filter teamData by selected year, or show all (sorted) if none selected
   const filteredTeam = selectedYear
