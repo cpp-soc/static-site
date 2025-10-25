@@ -2,81 +2,84 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "static-site"          // change to your image name
-        CONTAINER_NAME = "static-site"          // name of the running container serving traffic
-        REGISTRY = ""                   // leave "" if you're not pushing to a registry
+        // host paths
+        PROD_DIR    = "/opt/docker/site"               // where site/compose.yml lives
+        SITE_DIR    = "/opt/docker/site/static-site/app"   // where Dockerfile + app code should live/build from
+
+        IMAGE_NAME      = "static-site"
+        IMAGE_LATEST    = "static-site:latest"
+        SERVICE_NAME    = "static-site"
+        CONTAINER_NAME  = "static-site"
     }
 
     triggers {
-        // Fallback in case webhook fails.
-        pollSCM('H/5 * * * *') // checks every 5 mins
+        // optional: poll main in case webhook fails
+        pollSCM('H/5 * * * *')
     }
 
     stages {
-        stage('Checkout') {
-            when {
-                branch 'main'  // Only run on main branch
-            }
+        stage('Checkout main') {
+            when { branch 'main' }
             steps {
                 checkout scm
             }
         }
 
-        stage('Build Image') {
-            when {
-                branch 'main'  // Only run on main branch
-            }
+        stage('Sync code into host build dir') {
+            when { branch 'main' }
             steps {
-                script {
-                    // use short commit SHA as version tag
-                    COMMIT_SHA = sh(returnStdout: true, script: "git rev-parse --short HEAD").trim()
-                    env.IMAGE_TAG = "${IMAGE_NAME}:${COMMIT_SHA}"
-                    env.LATEST_TAG = "${IMAGE_NAME}:latest"
+                /*
+                 We need the latest app code to be present in /opt/docker/site/static-site
+                 so we can build the image FROM that directory using the host docker daemon.
 
-                    // Build from the app directory
-                    sh """
-                    cd app
-                    docker build -t ${IMAGE_TAG} -t ${LATEST_TAG} .
-                    """
-                }
+                 rsync copies the checked-out repo (current workspace) into SITE_DIR on the host.
+                 Adjust the source path ("./") if your actual app code is under ./app in git.
+                */
+                sh """
+                rsync -a --delete ./ ${SITE_DIR}/
+                """
             }
         }
 
-        stage('Deploy Container') {
-            when {
-                branch 'main'  // Only run on main branch
-            }
+        stage('Build image on host daemon') {
+            when { branch 'main' }
             steps {
-                script {
-                    // 1. Stop old container (ignore error if it isn't running yet)
-                    sh """
-                    docker ps --format '{{.Names}}' | grep -w ${CONTAINER_NAME} && \
-                      docker stop ${CONTAINER_NAME} || \
-                      echo 'Container not running, continue'
-                    """
+                /*
+                 Build the Docker image as static-site:latest using the host docker socket.
+                 After this, the host's Docker daemon now has an updated static-site:latest.
+                */
+                sh """
+                cd ${SITE_DIR}
+                docker build -t ${IMAGE_LATEST} -f Dockerfile .
+                """
+            }
+        }
 
-                    // 2. Remove old container if it exists
-                    sh """
-                    docker ps -a --format '{{.Names}}' | grep -w ${CONTAINER_NAME} && \
-                      docker rm ${CONTAINER_NAME} || \
-                      echo 'No old container to remove'
-                    """
+        stage('Redeploy via docker compose') {
+            when { branch 'main' }
+            steps {
+                /*
+                 Now tell docker compose (in /opt/docker/site/compose.yml) to recreate the service.
+                 compose.yml MUST define the service like:
+                 
+                 static-site:
+                   image: static-site:latest
+                   container_name: static-site
+                   ...
 
-                    // 3. Start new container with the rebuilt image
-                    sh """
-                    docker run -d \
-                      --name ${CONTAINER_NAME} \
-                      -p 3000:3000 \
-                      ${LATEST_TAG}
-                    """
-                }
+                 and MUST NOT have a 'build:' block anymore.
+                */
+                sh """
+                cd ${PROD_DIR}
+                docker compose up -d ${SERVICE_NAME}
+                """
             }
         }
     }
 
     post {
         success {
-            echo "Deploy succeeded: ${env.IMAGE_TAG} is now live"
+            echo "Deploy succeeded. ${IMAGE_LATEST} is now running as ${CONTAINER_NAME}."
         }
         failure {
             echo "Deploy failed. Check build logs."
