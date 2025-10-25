@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        PROD_DIR     = "/opt/docker/site"
-        SITE_DIR     = "/opt/docker/site/static-site"
+        APP_DIR      = "/opt/docker/site/static-site/app"  // where Dockerfile lives
+        PROD_DIR     = "/opt/docker/site"                  // where compose.yml lives
         IMAGE_TAG    = "static-site:latest"
         SERVICE_NAME = "static-site"
     }
@@ -19,24 +19,16 @@ pipeline {
             }
         }
 
-        stage('Sync code into SITE_DIR') {
+        stage('Build image on host Docker') {
             steps {
                 sh """
-                rsync -a --delete ./ ${SITE_DIR}/
-                """
-            }
-        }
-
-        stage('Build static-site:latest on host Docker') {
-            steps {
-                sh """
-                cd ${SITE_DIR}
+                cd ${APP_DIR}
                 docker build -t ${IMAGE_TAG} -f Dockerfile .
                 """
             }
         }
 
-        stage('Recreate container with docker compose from /opt/docker/site') {
+        stage('Restart prod with docker compose') {
             steps {
                 sh """
                 cd ${PROD_DIR}
