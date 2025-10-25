@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_TAG    = "static-site:latest"
-        SERVICE_NAME = "static-site"
+        IMAGE_TAG      = "static-site:latest"
+        CONTAINER_NAME = "static-site"
     }
 
     triggers {
@@ -26,10 +26,10 @@ pipeline {
             }
         }
 
-        stage('Restart prod with docker compose') {
+        stage('Restart container') {
             steps {
                 sh """
-                docker compose up -d ${SERVICE_NAME}
+                docker restart ${CONTAINER_NAME}
                 """
             }
         }
@@ -37,7 +37,7 @@ pipeline {
 
     post {
         success {
-            echo "✅ Deploy succeeded. ${IMAGE_TAG} is now running."
+            echo "✅ Deploy succeeded. ${IMAGE_TAG} rebuilt and ${CONTAINER_NAME} restarted."
         }
         failure {
             echo "❌ Deploy failed. Check logs."
