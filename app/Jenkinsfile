@@ -26,10 +26,22 @@ pipeline {
             }
         }
 
-        stage('Restart container') {
+        stage('Stop and remove old container') {
             steps {
                 sh """
-                docker restart ${CONTAINER_NAME}
+                docker stop ${CONTAINER_NAME} || true
+                docker rm ${CONTAINER_NAME} || true
+                """
+            }
+        }
+
+        stage('Start new container') {
+            steps {
+                sh """
+                docker run -d \
+                  --name ${CONTAINER_NAME} \
+                  -p 3000:3000 \
+                  ${IMAGE_TAG}
                 """
             }
         }
