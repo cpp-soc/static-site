@@ -2,16 +2,12 @@ pipeline {
     agent any
 
     environment {
-        // Host paths
-        PROD_DIR     = "/opt/docker/site"             // directory with compose.yml
-        SITE_DIR     = "/opt/docker/site/static-site" // directory with Dockerfile + built app code
-
-        IMAGE_TAG    = "static-site:latest"           // must match compose.yml's image:
-        SERVICE_NAME = "static-site"                  // service name in compose.yml
+        PROD_DIR     = "/opt/docker/site"
+        IMAGE_TAG    = "static-site:latest"
+        SERVICE_NAME = "static-site"
     }
 
     triggers {
-        // Optional safety net if webhooks fail.
         pollSCM('H/5 * * * *')
     }
 
@@ -22,19 +18,12 @@ pipeline {
             }
         }
 
-        stage('Sync code into SITE_DIR') {
-            steps {
-                // If your app code lives in ./app in the repo, change "./" to "./app/"
-                sh """
-                rsync -a --delete ./ ${SITE_DIR}/
-                """
-            }
-        }
-
         stage('Build static-site:latest on host Docker') {
             steps {
+                // IMPORTANT:
+                // The working directory here is the Jenkins workspace.
+                // That workspace MUST contain your Dockerfile and all app code.
                 sh """
-                cd ${SITE_DIR}
                 docker build -t ${IMAGE_TAG} -f Dockerfile .
                 """
             }
