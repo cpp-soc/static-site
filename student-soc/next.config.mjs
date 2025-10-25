@@ -6,6 +6,7 @@ const nextConfig = {
       { protocol: 'https', hostname: 'media.licdn.com' },
       { protocol: 'https', hostname: 'encrypted-tbn0.gstatic.com' },
       { protocol: 'https', hostname: 'cppsoc.xyz' },
+      { protocol: 'https', hostname: 'calpolysoc.org' },
       { protocol: 'https', hostname: 'github.com' },
       { protocol: 'https', hostname: 'raw.githubusercontent.com' },
       { protocol: 'https', hostname: 'assets.production.linktr.ee' },
