@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
             className="w-full lg:w-1/2 mb-8 lg:mb-0"
           >
             <h1 className="text-5xl font-bold mb-6 leading-tight">
-              Welcome to the <span className="text-yellow-400">Student Security Operations Center</span> @ Cal Poly Pomona
+              Welcome to the <span className="text-yellow-400">Security Operations Center</span> @ Cal Poly Pomona
             </h1>
             <p className="text-xl mb-6 leading-relaxed">
               Empowering the next generation of cybersecurity professionals through hands-on learning from monitoring of the <a href="https://www.cpp.edu/cba/digital-innovation/index.shtml" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">Mitchell C. Hill Center for Digital Innovation</a>.
