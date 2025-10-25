@@ -27,7 +27,7 @@ pipeline {
             steps {
                 sh """
                 cd app
-                docker build -t ${IMAGE_TAG} -f Dockerfile .
+                docker build --no-cache -t ${IMAGE_TAG} -f Dockerfile .
                 """
             }
         }
