@@ -1,0 +1,75 @@
+pipeline {
+    agent any
+
+    environment {
+        IMAGE_NAME = "static-site"          // change to your image name
+        CONTAINER_NAME = "static-site"          // name of the running container serving traffic
+        REGISTRY = ""                   // leave "" if you're not pushing to a registry
+    }
+
+    triggers {
+        // Fallback in case webhook fails.
+        pollSCM('H/5 * * * *') // checks every 5 mins
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build Image') {
+            steps {
+                script {
+                    // use short commit SHA as version tag
+                    COMMIT_SHA = sh(returnStdout: true, script: "git rev-parse --short HEAD").trim()
+                    env.IMAGE_TAG = "${IMAGE_NAME}:${COMMIT_SHA}"
+                    env.LATEST_TAG = "${IMAGE_NAME}:latest"
+
+                    sh """
+                    docker build -t ${IMAGE_TAG} -t ${LATEST_TAG} .
+                    """
+                }
+            }
+        }
+
+        stage('Deploy Container') {
+            steps {
+                script {
+                    // 1. Stop old container (ignore error if it isn't running yet)
+                    sh """
+                    docker ps --format '{{.Names}}' | grep -w ${CONTAINER_NAME} && \
+                      docker stop ${CONTAINER_NAME} || \
+                      echo 'Container not running, continue'
+                    """
+
+                    // 2. Remove old container if it exists
+                    sh """
+                    docker ps -a --format '{{.Names}}' | grep -w ${CONTAINER_NAME} && \
+                      docker rm ${CONTAINER_NAME} || \
+                      echo 'No old container to remove'
+                    """
+
+                    // 3. Start new container with the same options your web container needs
+                    // NOTE: You MUST customize ports, env vars, volumes, etc.
+                    sh """
+                    docker run -d \
+                      --name ${CONTAINER_NAME} \
+                      -p 3000:3000 \
+                      ${LATEST_TAG}
+                    """
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "Deploy succeeded: ${env.IMAGE_TAG} is now live"
+        }
+        failure {
+            echo "Deploy failed. Check build logs."
+        }
+    }
+}
