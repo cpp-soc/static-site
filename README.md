@@ -1,2 +1,2 @@
 # static-site
-static site pwrd by vite
+Cal Poly Pomona's Security Operation Center - Static Site - Powered by NextJS
