@@ -1,0 +1,20 @@
+services:
+  static-site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: static-site:local
+    container_name: static-site
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HOSTNAME=0.0.0.0
+    restart: unless-stopped
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

@@ -33,9 +33,9 @@ pipeline {
                     env.IMAGE_TAG = "${IMAGE_NAME}:${COMMIT_SHA}"
                     env.LATEST_TAG = "${IMAGE_NAME}:latest"
 
-                    // Build from the student-soc directory
+                    // Build from the app directory
                     sh """
-                    cd student-soc
+                    cd app
                     docker build -t ${IMAGE_TAG} -t ${LATEST_TAG} .
                     """
                 }
