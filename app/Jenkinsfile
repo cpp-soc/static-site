@@ -2,8 +2,6 @@ pipeline {
     agent any
 
     environment {
-        APP_DIR      = "/opt/docker/site/static-site/app"  // where Dockerfile lives
-        PROD_DIR     = "/opt/docker/site"                  // where compose.yml lives
         IMAGE_TAG    = "static-site:latest"
         SERVICE_NAME = "static-site"
     }
@@ -22,7 +20,7 @@ pipeline {
         stage('Build image on host Docker') {
             steps {
                 sh """
-                cd ${APP_DIR}
+                cd app
                 docker build -t ${IMAGE_TAG} -f Dockerfile .
                 """
             }
@@ -31,7 +29,6 @@ pipeline {
         stage('Restart prod with docker compose') {
             steps {
                 sh """
-                cd ${PROD_DIR}
                 docker compose up -d ${SERVICE_NAME}
                 """
             }
