@@ -2,57 +2,37 @@ pipeline {
     agent any
 
     environment {
-        // Host paths (these MUST be mounted into the jenkins container)
-        PROD_DIR     = "/opt/docker/site"             // folder that has compose.yml
-        SITE_DIR     = "/opt/docker/site/static-site" // folder that has Dockerfile + app code
+        // Host paths
+        PROD_DIR     = "/opt/docker/site"             // directory with compose.yml
+        SITE_DIR     = "/opt/docker/site/static-site" // directory with Dockerfile + built app code
 
-        IMAGE_TAG    = "static-site:latest"           // this must match compose.yml
+        IMAGE_TAG    = "static-site:latest"           // must match compose.yml's image:
         SERVICE_NAME = "static-site"                  // service name in compose.yml
     }
 
-    // safety net in case GitHub webhook doesn't fire
     triggers {
+        // Optional safety net if webhooks fail.
         pollSCM('H/5 * * * *')
     }
 
     stages {
-
-        stage('Checkout main') {
-            when { branch 'main' }
+        stage('Checkout') {
             steps {
                 checkout scm
             }
         }
 
-        stage('Sync code into host build dir') {
-            when { branch 'main' }
+        stage('Sync code into SITE_DIR') {
             steps {
-                /*
-                 We want the code Jenkins just checked out
-                 to live in /opt/docker/site/static-site on the HOST,
-                 because that's what we'll build from.
-
-                 NOTE:
-                 - If your app lives in the repo root, keep "./".
-                 - If your app lives in ./app in the repo, change "./" to "./app/".
-                */
+                // If your app code lives in ./app in the repo, change "./" to "./app/"
                 sh """
                 rsync -a --delete ./ ${SITE_DIR}/
                 """
             }
         }
 
-        stage('Build Docker image (static-site:latest) on the host daemon') {
-            when { branch 'main' }
+        stage('Build static-site:latest on host Docker') {
             steps {
-                /*
-                 This runs *inside* the Jenkins container,
-                 but because /var/run/docker.sock is mounted,
-                 `docker build` is actually talking to the host's Docker engine.
-
-                 Result:
-                 The host now has a fresh static-site:latest image.
-                */
                 sh """
                 cd ${SITE_DIR}
                 docker build -t ${IMAGE_TAG} -f Dockerfile .
@@ -60,18 +40,8 @@ pipeline {
             }
         }
 
-        stage('Deploy / restart running container via docker compose') {
-            when { branch 'main' }
+        stage('Recreate container with docker compose from /opt/docker/site') {
             steps {
-                /*
-                 Now we ask docker compose (the one in /opt/docker/site/compose.yml)
-                 to recreate the service using the new static-site:latest image.
-
-                 Requirements:
-                 - /opt/docker/site/compose.yml MUST NOT have a 'build:' block for static-site
-                   (it should ONLY say `image: static-site:latest`)
-                 - /opt/docker/site is mounted into the Jenkins container so this cd works
-                */
                 sh """
                 cd ${PROD_DIR}
                 docker compose up -d ${SERVICE_NAME}
@@ -85,7 +55,7 @@ pipeline {
             echo "✅ Deploy succeeded. ${IMAGE_TAG} is now running."
         }
         failure {
-            echo "❌ Deploy failed. Check build logs."
+            echo "❌ Deploy failed. Check logs."
         }
     }
 }
