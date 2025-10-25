@@ -7,17 +7,23 @@ pipeline {
     }
 
     triggers {
-        pollSCM('H/5 * * * *')
+        githubPush()
     }
 
     stages {
         stage('Checkout') {
+            when {
+                branch 'main'
+            }
             steps {
                 checkout scm
             }
         }
 
         stage('Build image on host Docker') {
+            when {
+                branch 'main'
+            }
             steps {
                 sh """
                 cd app
@@ -27,6 +33,9 @@ pipeline {
         }
 
         stage('Stop and remove old container') {
+            when {
+                branch 'main'
+            }
             steps {
                 sh """
                 docker stop ${CONTAINER_NAME} || true
@@ -36,6 +45,9 @@ pipeline {
         }
 
         stage('Start new container') {
+            when {
+                branch 'main'
+            }
             steps {
                 sh """
                 docker run -d \
