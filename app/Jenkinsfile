@@ -2,7 +2,8 @@ pipeline {
     agent any
 
     environment {
-        PROD_DIR     = "/opt/docker/site/app"
+        PROD_DIR     = "/opt/docker/site"
+        SITE_DIR     = "/opt/docker/site/static-site"
         IMAGE_TAG    = "static-site:latest"
         SERVICE_NAME = "static-site"
     }
@@ -18,12 +19,18 @@ pipeline {
             }
         }
 
+        stage('Sync code into SITE_DIR') {
+            steps {
+                sh """
+                rsync -a --delete ./ ${SITE_DIR}/
+                """
+            }
+        }
+
         stage('Build static-site:latest on host Docker') {
             steps {
-                // IMPORTANT:
-                // The working directory here is the Jenkins workspace.
-                // That workspace MUST contain your Dockerfile and all app code.
                 sh """
+                cd ${SITE_DIR}
                 docker build -t ${IMAGE_TAG} -f Dockerfile .
                 """
             }
