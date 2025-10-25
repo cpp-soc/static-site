@@ -48,9 +48,6 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, year, program, role, descript
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
         whileHover={{ y: -5 }}
         className={`group relative bg-white text-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer border-2 border-transparent hover:${colors.border} h-[360px] flex flex-col`}
         onClick={() => setShowModal(true)}
