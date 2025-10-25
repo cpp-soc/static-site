@@ -98,7 +98,7 @@ const teamData = [
     role: "Director of SOC",
     description:
       "Graduate student in the Masters in Information Security program and current director of the SOC. Hill Family Fellow. Member of SWIFT since 2023, participated in the National DOE CyberForce Cybersecurity Competition and in the National Centers of Academic Excellence in Cybersecurity (NCAE-C) national competition where the team obtained 2nd place nationally. Learning to deploy and manage an industry recognized SIEM platform called Splunk to monitor the Student Data Center for security events. Used this experience to teach and share knowledge of Splunk to other student volunteers at the SOC and created a Splunk Lab for newcomers to get practical experience using Splunk.",
-    picture: "https://cppsoc.xyz/assets/2024-team/director.jpg",
+    picture: "https://calpolysoc.org/assets/2024-team/director.jpg",
     media: {
       linkedin: "https://www.linkedin.com/in/hsshin95/",
       github: "https://github.com/Sh0bra",
@@ -113,7 +113,7 @@ const teamData = [
     role: "Security Engineer Lead",
     description:
       "My time working for the Student Security Operations Center's managing team has been incredibly fulfilling. I've had the opportunity to help mentor and guide our volunteers through their Cyber career journey. Our work has resulted in our volunteers and alumni securing internships and job offers from top tech companies. Contributing to the success of others has been an extremely rewarding experience.",
-    picture: "https://cppsoc.xyz/assets/2024-team/security-engineer-lead.jpg",
+    picture: "https://calpolysoc.org/assets/2024-team/security-engineer-lead.jpg",
     media: {
       linkedin: "https://www.linkedin.com/in/drakehuffman/",
     },
@@ -127,7 +127,7 @@ const teamData = [
     role: "Security Engineer",
     description:
       "Hi everyone, my name is Kenneth and I am one of the Security Operation Center student employees. I have been in a SOC environment using SIEMs before, and want to help students gain SOC skills too!. I have experience from multiple internships in cybersecurity and Cal Poly Pomona's Student SOC has helped me improve my skills and achieving my goal of becoming a cybersecurity engineer.",
-    picture: "https://cppsoc.xyz/assets/2024-team/1707181149301.jpg",
+    picture: "https://calpolysoc.org/assets/2024-team/1707181149301.jpg",
     media: {
       linkedin: "https://www.linkedin.com/in/kenneth-cher/",
     },
@@ -180,7 +180,7 @@ const teamData = [
     program: "Computer Information Systems",
     role: "Vice President of Outreach",
     description: "",
-    picture: "https://cppsoc.xyz/assets/2024-team/vp-outreach.jpg",
+    picture: "https://calpolysoc.org/assets/2024-team/vp-outreach.jpg",
     media: {
       linkedin: "https://www.linkedin.com/in/eric-heng-86261a194/",
     },
@@ -193,7 +193,7 @@ const teamData = [
     program: "Computer Information Systems",
     role: "Webmaster",
     description: "Responsible for maintaining Web Infrastructure and Development. Building SOC Static Site and Wiki!",
-    picture: "https://cppsoc.xyz/assets/2024-team/webmaster.jpg",
+    picture: "https://calpolysoc.org/assets/2024-team/webmaster.jpg",
     media: {
       linkedin: "https://www.linkedin.com/in/thomasphao/",
       github: "https://github.com/xdkaine",

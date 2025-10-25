@@ -16,7 +16,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <meta property="og:title" content="Student SOC @ Cal Poly Pomona" />
         <meta property="og:description" content="Explore student opportunities in cybersecurity, security operations, and hands-on learning at Cal Poly Pomona's Student SOC." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://cppsoc.xyz" />
+        <meta property="og:url" content="https://calpolysoc.org/" />
         <meta property="og:image" content="/logo3.png" />
         <title>Student SOC @ Cal Poly Pomona</title>
       </Head>
