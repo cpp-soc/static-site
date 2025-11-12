@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
 import eventData from "../data/schedule";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -8,6 +9,11 @@ import { motion } from "framer-motion";
 const Schedule: React.FC = () => {
   return (
     <>
+      <Head>
+        <title>Schedule | Student SOC @ Cal Poly Pomona</title>
+        <meta name="description" content="View upcoming events, meetings, and activities for Cal Poly Pomona's Student Security Operations Center. Stay up-to-date with our schedule." />
+        <link rel="canonical" href="https://calpolysoc.org/schedule" />
+      </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         {/* Hero Section */}

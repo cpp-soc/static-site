@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -7,6 +8,11 @@ import Footer from '@/components/Footer';
 const ContactPage: React.FC = () => {
   return (
     <>
+      <Head>
+        <title>Contact Us | Student SOC @ Cal Poly Pomona</title>
+        <meta name="description" content="Get in touch with Cal Poly Pomona's Student Security Operations Center. Contact us for questions, opportunities, or to learn more about our program." />
+        <link rel="canonical" href="https://calpolysoc.org/contact" />
+      </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         <div className="container mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-10 md:py-16 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-0">

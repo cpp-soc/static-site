@@ -14,12 +14,13 @@ const FAQ: React.FC = () => {
 
   return (
     <>
+      <Head>
+        <title>FAQ - Student SOC @ Cal Poly Pomona</title>
+        <meta name="description" content="Frequently asked questions about joining and working with Cal Poly Pomona's Student Security Operations Center. Learn about opportunities, requirements, and benefits." />
+        <link rel="canonical" href="https://calpolysoc.org/faq" />
+      </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
-        <Head>
-          <title>FAQ - Student SOC</title>
-          <meta name="description" content="FAQ page for Student SOC" />
-        </Head>
         <div className="container mx-auto px-4 py-16 flex flex-col items-center justify-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

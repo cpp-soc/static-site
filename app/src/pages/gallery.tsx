@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
@@ -143,6 +144,11 @@ const EventGallery: React.FC<EventGalleryProps> = ({ event }) => {
 const GalleryPage: React.FC = () => {
   return (
     <>
+      <Head>
+        <title>Event Gallery | Student SOC @ Cal Poly Pomona</title>
+        <meta name="description" content="Browse photos from Student SOC events, conferences, and activities at Cal Poly Pomona. See our team in action at cybersecurity competitions and community events." />
+        <link rel="canonical" href="https://calpolysoc.org/gallery" />
+      </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         {/* Hero Section */}

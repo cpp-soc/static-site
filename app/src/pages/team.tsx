@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
@@ -24,6 +25,11 @@ const Team: React.FC = () => {
 
   return (
     <>
+      <Head>
+        <title>Our Team | Student SOC @ Cal Poly Pomona</title>
+        <meta name="description" content="Meet the students and faculty behind Cal Poly Pomona's Security Operations Center. Discover our dedicated team of cybersecurity professionals and mentors." />
+        <link rel="canonical" href="https://calpolysoc.org/team" />
+      </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         {/* Hero Section */}

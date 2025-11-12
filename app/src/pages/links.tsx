@@ -1,13 +1,13 @@
 
 
 
+import React from "react";
+import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { links } from "@/data/linksData";
-
-
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: (i: number) => ({
@@ -23,6 +23,11 @@ const cardVariants = {
 const LinksPage: React.FC = () => {
   return (
     <>
+      <Head>
+        <title>Quick Links | Student SOC @ Cal Poly Pomona</title>
+        <meta name="description" content="Access important resources, forms, and platforms for Cal Poly Pomona's Student SOC. Quick links to essential tools and information." />
+        <link rel="canonical" href="https://calpolysoc.org/links" />
+      </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         {/* Hero Section */}

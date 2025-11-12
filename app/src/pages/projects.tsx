@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -9,6 +10,11 @@ import projectsData from "@/data/projectsData";
 const Projects: React.FC = () => {
   return (
     <>
+      <Head>
+        <title>Our Projects | Student SOC @ Cal Poly Pomona</title>
+        <meta name="description" content="Explore cybersecurity projects and initiatives from Cal Poly Pomona's Student SOC, including threat detection, SIEM implementation, and security research." />
+        <link rel="canonical" href="https://calpolysoc.org/projects" />
+      </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         {/* Hero Section */}
