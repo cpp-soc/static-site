@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
+import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer"; 
 import ImageCarousel from "@/components/imageCarousel";
@@ -10,10 +11,47 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Student SOC @ Cal Poly Pomona | Cybersecurity Operations Center</title>
-        <meta name="description" content="Cal Poly Pomona's Student Security Operations Center empowers the next generation of cybersecurity professionals through hands-on learning and real-world monitoring experience." />
+        <html lang="en" />
+        <title>Cal Poly SOC | CalPolySoc - Student Security Operations Center at Cal Poly Pomona</title>
+        <meta name="description" content="Cal Poly SOC - Student-led Security Operations Center at Cal Poly Pomona. Empowering the next generation of cybersecurity professionals through hands-on threat monitoring, SIEM operations, and real-world security experience in the Mitchell C. Hill Center." />
+        <meta name="keywords" content="Cal Poly SOC, CalPolySoc, CPP SOC, Cal Poly Pomona SOC, student security operations center, cybersecurity education, SIEM training, Splunk, threat monitoring, security analyst, Cal Poly Pomona, Mitchell C. Hill Center" />
         <link rel="canonical" href="https://calpolysoc.org/" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://calpolysoc.org/" />
+        <meta property="og:title" content="Cal Poly SOC - Student Security Operations Center" />
+        <meta property="og:description" content="Student-led Security Operations Center at Cal Poly Pomona providing hands-on cybersecurity education and real-world threat monitoring experience." />
+        <meta property="og:image" content="https://calpolysoc.org/assets/logo3.png" />
+        <meta property="og:image:alt" content="Cal Poly SOC Logo" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://calpolysoc.org/" />
+        <meta name="twitter:title" content="Cal Poly SOC - Student Security Operations Center" />
+        <meta name="twitter:description" content="Student-led Security Operations Center at Cal Poly Pomona providing hands-on cybersecurity education." />
+        <meta name="twitter:image" content="https://calpolysoc.org/assets/logo3.png" />
       </Head>
+      
+      {/* WebSite Schema for Search Box */}
+      <Script
+        id="website-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://calpolysoc.org/#website",
+            "url": "https://calpolysoc.org",
+            "name": "Cal Poly SOC",
+            "alternateName": "CalPolySoc",
+            "description": "Student Security Operations Center at Cal Poly Pomona",
+            "publisher": {
+              "@id": "https://calpolysoc.org/#organization"
+            }
+          }),
+        }}
+      />
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         {/* Hero Section */}

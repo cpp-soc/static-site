@@ -26,9 +26,25 @@ const Team: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Our Team | Student SOC @ Cal Poly Pomona</title>
-        <meta name="description" content="Meet the students and faculty behind Cal Poly Pomona's Security Operations Center. Discover our dedicated team of cybersecurity professionals and mentors." />
+        <html lang="en" />
+        <title>Our Team | Cal Poly SOC - Student Cybersecurity Professionals</title>
+        <meta name="description" content="Meet the students and faculty behind Cal Poly SOC. Discover our dedicated team of student cybersecurity professionals, SOC analysts, and faculty mentors at Cal Poly Pomona's Security Operations Center." />
+        <meta name="keywords" content="Cal Poly SOC team, CalPolySoc students, CPP SOC members, student SOC analysts, cybersecurity students, Cal Poly Pomona security team, SOC faculty" />
         <link rel="canonical" href="https://calpolysoc.org/team" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://calpolysoc.org/team" />
+        <meta property="og:title" content="Our Team | Cal Poly SOC" />
+        <meta property="og:description" content="Meet the students and faculty behind Cal Poly SOC. Dedicated cybersecurity professionals and mentors." />
+        <meta property="og:image" content="https://calpolysoc.org/assets/logo3.png" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://calpolysoc.org/team" />
+        <meta name="twitter:title" content="Our Team | Cal Poly SOC" />
+        <meta name="twitter:description" content="Meet the students and faculty behind Cal Poly SOC." />
+        <meta name="twitter:image" content="https://calpolysoc.org/assets/logo3.png" />
       </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">

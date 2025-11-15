@@ -145,9 +145,25 @@ const GalleryPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Event Gallery | Student SOC @ Cal Poly Pomona</title>
-        <meta name="description" content="Browse photos from Student SOC events, conferences, and activities at Cal Poly Pomona. See our team in action at cybersecurity competitions and community events." />
+        <html lang="en" />
+        <title>Event Gallery | Cal Poly SOC - Cybersecurity Events & Community Photos</title>
+        <meta name="description" content="Browse photos from Cal Poly SOC events, conferences, and activities. See our team in action at cybersecurity competitions, workshops, and community events at Cal Poly Pomona's Student Security Operations Center." />
+        <meta name="keywords" content="Cal Poly SOC gallery, CalPolySoc events, CPP SOC photos, student cybersecurity events, Cal Poly Pomona SOC pictures, security competitions, cybersecurity conference, SOC activities" />
         <link rel="canonical" href="https://calpolysoc.org/gallery" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://calpolysoc.org/gallery" />
+        <meta property="og:title" content="Event Gallery | Cal Poly SOC" />
+        <meta property="og:description" content="Browse photos from Cal Poly SOC events, conferences, and activities." />
+        <meta property="og:image" content="https://calpolysoc.org/assets/logo3.png" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://calpolysoc.org/gallery" />
+        <meta name="twitter:title" content="Event Gallery | Cal Poly SOC" />
+        <meta name="twitter:description" content="Browse photos from Cal Poly SOC events and activities." />
+        <meta name="twitter:image" content="https://calpolysoc.org/assets/logo3.png" />
       </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">

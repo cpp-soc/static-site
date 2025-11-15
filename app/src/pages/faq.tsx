@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import Script from "next/script";
 import { motion } from "framer-motion";
 import faqData from "@/data/faqData";
 import Navbar from "@/components/Navbar";
@@ -15,10 +16,46 @@ const FAQ: React.FC = () => {
   return (
     <>
       <Head>
-        <title>FAQ - Student SOC @ Cal Poly Pomona</title>
-        <meta name="description" content="Frequently asked questions about joining and working with Cal Poly Pomona's Student Security Operations Center. Learn about opportunities, requirements, and benefits." />
+        <html lang="en" />
+        <title>FAQ | Cal Poly SOC - Frequently Asked Questions About Joining Our SOC</title>
+        <meta name="description" content="Frequently asked questions about joining Cal Poly SOC. Learn about opportunities, requirements, benefits, training, and how to get involved with Cal Poly Pomona's Student Security Operations Center." />
+        <meta name="keywords" content="Cal Poly SOC FAQ, CalPolySoc questions, how to join SOC, CPP SOC requirements, student cybersecurity FAQ, Cal Poly Pomona SOC, SOC training, security operations questions" />
         <link rel="canonical" href="https://calpolysoc.org/faq" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://calpolysoc.org/faq" />
+        <meta property="og:title" content="FAQ | Cal Poly SOC" />
+        <meta property="og:description" content="Frequently asked questions about joining Cal Poly SOC. Learn about opportunities, requirements, and benefits." />
+        <meta property="og:image" content="https://calpolysoc.org/assets/logo3.png" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://calpolysoc.org/faq" />
+        <meta name="twitter:title" content="FAQ | Cal Poly SOC" />
+        <meta name="twitter:description" content="Frequently asked questions about joining Cal Poly SOC." />
+        <meta name="twitter:image" content="https://calpolysoc.org/assets/logo3.png" />
       </Head>
+      
+      {/* FAQPage Schema */}
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqData.map(item => ({
+              "@type": "Question",
+              "name": item.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+              }
+            }))
+          }),
+        }}
+      />
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
         <div className="container mx-auto px-4 py-16 flex flex-col items-center justify-center">

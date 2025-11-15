@@ -9,9 +9,25 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Contact Us | Student SOC @ Cal Poly Pomona</title>
-        <meta name="description" content="Get in touch with Cal Poly Pomona's Student Security Operations Center. Contact us for questions, opportunities, or to learn more about our program." />
+        <html lang="en" />
+        <title>Contact Us | Cal Poly SOC - Get in Touch with Our Security Team</title>
+        <meta name="description" content="Contact Cal Poly SOC - Get in touch with Cal Poly Pomona's Student Security Operations Center. Email us at cpp.soc.club@gmail.com or join our Discord community for questions, opportunities, and information about our cybersecurity program." />
+        <meta name="keywords" content="Cal Poly SOC contact, CalPolySoc contact, CPP SOC email, contact student SOC, Cal Poly Pomona cybersecurity contact, SOC Discord, cpp.soc.club@gmail.com" />
         <link rel="canonical" href="https://calpolysoc.org/contact" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://calpolysoc.org/contact" />
+        <meta property="og:title" content="Contact Us | Cal Poly SOC" />
+        <meta property="og:description" content="Get in touch with Cal Poly SOC. Email us or join our Discord community." />
+        <meta property="og:image" content="https://calpolysoc.org/assets/logo3.png" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://calpolysoc.org/contact" />
+        <meta name="twitter:title" content="Contact Us | Cal Poly SOC" />
+        <meta name="twitter:description" content="Get in touch with Cal Poly SOC." />
+        <meta name="twitter:image" content="https://calpolysoc.org/assets/logo3.png" />
       </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">

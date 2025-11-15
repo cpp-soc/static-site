@@ -10,9 +10,25 @@ const Schedule: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Schedule | Student SOC @ Cal Poly Pomona</title>
-        <meta name="description" content="View upcoming events, meetings, and activities for Cal Poly Pomona's Student Security Operations Center. Stay up-to-date with our schedule." />
+        <html lang="en" />
+        <title>Schedule & Events | Cal Poly SOC - SOC Operations Hours & Activities</title>
+        <meta name="description" content="View Cal Poly SOC schedule: daily SOC operations hours, upcoming events, meetings, and cybersecurity activities at Cal Poly Pomona's Student Security Operations Center. Open 5 days a week in the Mitchell C. Hill Center." />
+        <meta name="keywords" content="Cal Poly SOC schedule, CalPolySoc events, CPP SOC hours, SOC operations schedule, cybersecurity events, Cal Poly Pomona security, student SOC meetings, Mitchell C. Hill Center" />
         <link rel="canonical" href="https://calpolysoc.org/schedule" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://calpolysoc.org/schedule" />
+        <meta property="og:title" content="Schedule & Events | Cal Poly SOC" />
+        <meta property="og:description" content="View Cal Poly SOC schedule: daily operations, upcoming events, and cybersecurity activities." />
+        <meta property="og:image" content="https://calpolysoc.org/assets/logo3.png" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://calpolysoc.org/schedule" />
+        <meta name="twitter:title" content="Schedule & Events | Cal Poly SOC" />
+        <meta name="twitter:description" content="View Cal Poly SOC schedule and upcoming events." />
+        <meta name="twitter:image" content="https://calpolysoc.org/assets/logo3.png" />
       </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">

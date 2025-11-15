@@ -24,9 +24,25 @@ const LinksPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Quick Links | Student SOC @ Cal Poly Pomona</title>
-        <meta name="description" content="Access important resources, forms, and platforms for Cal Poly Pomona's Student SOC. Quick links to essential tools and information." />
+        <html lang="en" />
+        <title>Quick Links | Cal Poly SOC - Resources, Forms & Essential Tools</title>
+        <meta name="description" content="Access Cal Poly SOC resources: important forms, platforms, and essential tools for Cal Poly Pomona's Student Security Operations Center members. Quick links with QR codes for easy access." />
+        <meta name="keywords" content="Cal Poly SOC links, CalPolySoc resources, CPP SOC tools, student SOC forms, Cal Poly Pomona security resources, SOC quick links, cybersecurity tools" />
         <link rel="canonical" href="https://calpolysoc.org/links" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://calpolysoc.org/links" />
+        <meta property="og:title" content="Quick Links | Cal Poly SOC" />
+        <meta property="og:description" content="Access important resources, forms, and platforms for Cal Poly SOC." />
+        <meta property="og:image" content="https://calpolysoc.org/assets/logo3.png" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://calpolysoc.org/links" />
+        <meta name="twitter:title" content="Quick Links | Cal Poly SOC" />
+        <meta name="twitter:description" content="Access important resources and tools for Cal Poly SOC." />
+        <meta name="twitter:image" content="https://calpolysoc.org/assets/logo3.png" />
       </Head>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
