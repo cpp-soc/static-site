@@ -12,7 +12,7 @@ const HomePage: React.FC = () => {
     <>
       <Head>
         <html lang="en" />
-        <title>Cal Poly SOC | CalPolySoc - Student Security Operations Center at Cal Poly Pomona</title>
+        <title>Cal Poly SOC | Student Security Operations Center at Cal Poly Pomona</title>
         <meta name="description" content="Cal Poly SOC - Student-led Security Operations Center at Cal Poly Pomona. Empowering the next generation of cybersecurity professionals through hands-on threat monitoring, SIEM operations, and real-world security experience in the Mitchell C. Hill Center." />
         <meta name="keywords" content="Cal Poly SOC, CalPolySoc, CPP SOC, Cal Poly Pomona SOC, student security operations center, cybersecurity education, SIEM training, Splunk, threat monitoring, security analyst, Cal Poly Pomona, Mitchell C. Hill Center" />
         <link rel="canonical" href="https://calpolysoc.org/" />
