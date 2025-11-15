@@ -5,9 +5,9 @@ export const links = [
     qr: "/assets/links/qrforsoc.png",
   },
   {
-    name: "Global Protect User Access Request",
-    url: "https://forms.cloud.microsoft/r/5BtvPPTJku",
-    qr: "/assets/links/qrforgp.png",
+    name: "{New} User Access Request Portal",
+    url: "https://portal.calpolysoc.org/",
+    qr: "/assets/links/qrforuar.png",
   },
   {
     name: "Discord",
