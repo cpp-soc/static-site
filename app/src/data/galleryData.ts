@@ -7,14 +7,14 @@ export interface GalleryEvent {
 }
 
 export const galleryEvents: GalleryEvent[] = [
-    {
+  {
     id: "sdcwd-2",
     title: "SDC Workday",
     subtitle: "Volunteer-led Proxmox Cluster (11/14 - 11/15)",
     description: "The Student Directors of the SOC/SDC planned to provide hardware for volunteers to research and create their own test cluster, similar to the production environment they have at the SDC. From researching Proxmox to TrueNAS, the volunteers lead every step of the way on how to configure this new test cluster.",
     date: "Fall 2025"
   },
-      {
+  {
     id: "sdcwd-1",
     title: "SDC/SOC Workday",
     subtitle: "Inventory and Syslog Deployment (10/20 - 10/23)",
