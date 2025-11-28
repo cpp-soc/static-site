@@ -83,7 +83,7 @@ const teamData = [
     description:
       "From starting as a SOC Volunteer in Spring 2024 to rebuilding the SOC alongside the Student Operations Manager!",
     picture:
-      "https://media.licdn.com/dms/image/v2/D5603AQFI7ZBRCOheqQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1698549537540?e=1762387200&v=beta&t=rmHigENVWrhZlebkMyh5sG0eIbZNcjyf6I1lO8G-Eco",
+      "https://www.cpp.edu/cba/information-assurance/img/student/tommy.jpg",
     media: {
       linkedin: "https://www.linkedin.com/in/thomasphao/",
     },
