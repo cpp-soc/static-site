@@ -7,6 +7,13 @@ export interface GalleryEvent {
 }
 
 export const galleryEvents: GalleryEvent[] = [
+    {
+    id: "grand25",
+    title: "SOC Grand Opening",
+    subtitle: "Security Operations Center Official Opening 11-20-2025",
+    description: "In conjunction and support with the several Offices and Centers of Cal Poly Pomona, the Security Operations Center (SOC) opened its doors to the public on November 20, 2025.",
+    date: "Fall 2025"
+  },
   {
     id: "sdcwd-2",
     title: "SDC Workday",
