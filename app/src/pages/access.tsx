@@ -132,24 +132,36 @@ const Access: React.FC = () => {
                         <div className="max-w-4xl mx-auto space-y-8">
 
                             {/* Step 1 */}
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5 }}
-                                className="bg-white p-6 rounded-lg shadow-lg"
+                            <a
+                                href="https://cpp.service-now.com/ehelp?id=sc_cat_item&sys_id=17e10ab82b11e2505379f85ab891bf71"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block"
                             >
-                                <div className="flex items-start gap-4">
-                                    <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center text-lg font-bold flex-shrink-0">
-                                        1
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5 }}
+                                    className="bg-white p-6 rounded-lg shadow-lg cursor-pointer hover:shadow-xl hover:scale-[1.02] transition-all border-2 border-transparent hover:border-yellow-400"
+                                >
+                                    <div className="flex items-start gap-4">
+                                        <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center text-lg font-bold flex-shrink-0">
+                                            1
+                                        </div>
+                                        <div className="flex-1">
+                                            <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
+                                                Submit a ServiceNow Ticket
+                                                <svg className="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                                </svg>
+                                            </h3>
+                                            <p className="text-gray-600">
+                                                Request access to the Student Data Center Network through the campus ServiceNow portal. (SSO)
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div className="flex-1">
-                                        <h3 className="text-xl font-semibold mb-2">Submit a ServiceNow Ticket</h3>
-                                        <p className="text-gray-600">
-                                            Request access to the Student Data Center through the campus ServiceNow portal.
-                                        </p>
-                                    </div>
-                                </div>
-                            </motion.div>
+                                </motion.div>
+                            </a>
 
                             {/* Step 2 */}
                             <motion.div
