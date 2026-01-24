@@ -64,7 +64,7 @@ const Access: React.FC = () => {
         <>
             <Head>
                 <title>Access Guide | Cal Poly SOC - How to Access the SDC</title>
-                <meta name="description" content="Step-by-step guide to accessing Student Development Center resources at Cal Poly Pomona" />
+                <meta name="description" content="Step-by-step guide to accessing Student Data Center resources at Cal Poly Pomona" />
             </Head>
             <Navbar />
             <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
