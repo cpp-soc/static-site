@@ -29,7 +29,7 @@ export const faqData = [
     },
     {
       question: 'How can I stay updated on SOC news and events?',
-      answer: 'You can stay updated by visiting our Discord!.',
+      answer: 'You can stay updated by visiting our Discord!',
     },
   ];
 
