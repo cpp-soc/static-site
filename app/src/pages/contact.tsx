@@ -11,8 +11,8 @@ const ContactPage: React.FC = () => {
       <Head>
         <html lang="en" />
         <title>Contact Us | Cal Poly SOC - Get in Touch with Our Security Team</title>
-        <meta name="description" content="Contact Cal Poly SOC - Get in touch with Cal Poly Pomona's Student Security Operations Center. Email us at cpp.soc.club@gmail.com or join our Discord community for questions, opportunities, and information about our cybersecurity program." />
-        <meta name="keywords" content="Cal Poly SOC contact, CalPolySoc contact, CPP SOC email, contact student SOC, Cal Poly Pomona cybersecurity contact, SOC Discord, cpp.soc.club@gmail.com" />
+        <meta name="description" content="Contact Cal Poly SOC - Get in touch with Cal Poly Pomona's Student Security Operations Center. Email us at soc@outlook.com or join our Discord community for questions, opportunities, and information about our cybersecurity program." />
+        <meta name="keywords" content="Cal Poly SOC contact, CalPolySoc contact, CPP SOC email, contact student SOC, Cal Poly Pomona cybersecurity contact, SOC Discord, soc@outlook.com" />
         <link rel="canonical" href="https://calpolysoc.org/contact" />
         
         {/* Open Graph */}
@@ -46,7 +46,7 @@ const ContactPage: React.FC = () => {
             </p>
             <div className="flex flex-col items-center justify-center">
               <span className="text-lg mb-2">Email us directly:</span>
-              <a href="mailto:cpp.soc.club@gmail.com" className="text-black-400 text-xl font-semibold mb-6">cpp.soc.club@gmail.com</a>
+              <a href="mailto:soc@outlook.com" className="text-black-400 text-xl font-semibold mb-6">soc@outlook.com</a>
             </div>
           </motion.div>
           <div className="w-full lg:w-1/3 flex flex-col items-center justify-center">
