@@ -11,7 +11,7 @@ export const links = [
   },
   {
     name: "Discord",
-    url: "https://discord.gg/R3d3EEhpbY",
+    url: "https://discord.gg/PGJs8GHQcK",
     qr: "/assets/links/qrfordisc.png",
   },
   /*
