@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-const DISCORD_URL = "https://discord.gg/R3d3EEhpbY";
+const DISCORD_URL = "https://discord.gg/PGJs8GHQcK";
 
 
 const DiscordPage: React.FC = () => {
