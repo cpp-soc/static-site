@@ -197,7 +197,7 @@ const Access: React.FC = () => {
                                     <div className="flex-1">
                                         <h3 className="text-xl font-semibold mb-2">Download & Install GlobalProtect</h3>
                                         <p className="text-gray-600 mb-4">
-                                            Visit <a href="https://vpn.connect.cpp.edu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-medium">vpn.connect.cpp.edu</a> to download GlobalProtect VPN client for your operating system.
+                                            Visit <a href="https://mgmt.sdc.cpp.edu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-medium">mgmt.sdc.cpp.edu</a> to download GlobalProtect VPN client for your operating system.
                                         </p>
 
                                         {/* OS Tabs - Pill Style */}
@@ -409,28 +409,16 @@ const Access: React.FC = () => {
                                                     </div>
                                                     <div>
                                                         <h4 className="font-semibold text-gray-800">Linux Instructions</h4>
-                                                        <p className="text-gray-500 text-xs">Screenshots coming soon</p>
                                                     </div>
                                                 </div>
                                                 <div className="space-y-3">
                                                     <div className="flex items-start gap-3">
                                                         <span className="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">1</span>
-                                                        <p className="text-gray-700 text-sm">Download the Linux package (.deb or .rpm) from <a href="https://vpn.connect.cpp.edu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">vpn.connect.cpp.edu</a></p>
+                                                        <p className="text-gray-700 text-sm">Install <a href="https://github.com/yuezk/GlobalProtect-openconnect" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-medium">GlobalProtect-openconnect</a> using the instructions for your Linux distribution</p>
                                                     </div>
                                                     <div className="flex items-start gap-3">
                                                         <span className="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</span>
-                                                        <div className="text-gray-700 text-sm">
-                                                            Install via terminal:
-                                                            <div className="mt-1 flex flex-wrap gap-2">
-                                                                <code className="bg-gray-800 text-green-400 px-2 py-1 rounded text-xs font-mono">sudo dpkg -i GlobalProtect.deb</code>
-                                                                <span className="text-gray-400 text-xs">or</span>
-                                                                <code className="bg-gray-800 text-green-400 px-2 py-1 rounded text-xs font-mono">sudo rpm -i GlobalProtect.rpm</code>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="flex items-start gap-3">
-                                                        <span className="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">3</span>
-                                                        <p className="text-gray-700 text-sm">Launch GlobalProtect from your applications menu</p>
+                                                        <p className="text-gray-700 text-sm">Open the GUI or use the <code className="bg-gray-800 text-green-400 px-2 py-1 rounded text-xs font-mono">gpclient</code> CLI</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -923,28 +911,16 @@ const Access: React.FC = () => {
                                                         </div>
                                                         <div>
                                                             <h4 className="font-semibold text-gray-800">Linux Instructions</h4>
-                                                            <p className="text-gray-500 text-xs">Screenshots coming soon</p>
                                                         </div>
                                                     </div>
                                                     <div className="space-y-3">
                                                         <div className="flex items-start gap-3">
                                                             <span className="w-5 h-5 bg-gray-800 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">1</span>
-                                                            <p className="text-gray-700 text-sm">Download the Linux package (.deb or .rpm) from <a href="https://vpn.connect.cpp.edu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">vpn.connect.cpp.edu</a></p>
+                                                            <p className="text-gray-700 text-sm">Install <a href="https://github.com/yuezk/GlobalProtect-openconnect" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-medium">GlobalProtect-openconnect</a> using the instructions for your Linux distribution</p>
                                                         </div>
                                                         <div className="flex items-start gap-3">
                                                             <span className="w-5 h-5 bg-gray-800 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</span>
-                                                            <div className="text-gray-700 text-sm">
-                                                                Install via terminal:
-                                                                <div className="mt-1 flex flex-wrap gap-2">
-                                                                    <code className="bg-gray-800 text-green-400 px-2 py-1 rounded text-xs font-mono">sudo dpkg -i GlobalProtect.deb</code>
-                                                                    <span className="text-gray-400 text-xs">or</span>
-                                                                    <code className="bg-gray-800 text-green-400 px-2 py-1 rounded text-xs font-mono">sudo rpm -i GlobalProtect.rpm</code>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="flex items-start gap-3">
-                                                            <span className="w-5 h-5 bg-gray-800 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">3</span>
-                                                            <p className="text-gray-700 text-sm">Launch GlobalProtect from your applications menu</p>
+                                                            <p className="text-gray-700 text-sm">Open the GUI or use the <code className="bg-gray-800 text-green-400 px-2 py-1 rounded text-xs font-mono">gpclient</code> CLI</p>
                                                         </div>
                                                     </div>
                                                 </div>
