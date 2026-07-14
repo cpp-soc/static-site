@@ -593,7 +593,7 @@ const Access: React.FC = () => {
                     {/* External Visitor Steps */}
                     {selectedPath === "external" && (
                         <div className="max-w-4xl mx-auto space-y-8">
-                            {/* Step 1 - Contact SOC */}
+                            {/* Step 1 - Contact Organizer */}
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -605,35 +605,15 @@ const Access: React.FC = () => {
                                         1
                                     </div>
                                     <div className="flex-1">
-                                        <h3 className="text-xl font-semibold mb-2">Contact SOC to Start Your Request</h3>
-                                        <p className="text-gray-600 mb-4">
-                                            Email <a href="mailto:soc@cpp.edu" className="text-blue-600 hover:text-blue-800 underline font-medium">soc@cpp.edu</a> to request access to the SDC. The more details the better!
+                                        <h3 className="text-xl font-semibold mb-2">Contact the Club or Event Organizer</h3>
+                                        <p className="text-gray-600">
+                                            Start with the club, event organizer, or program contact coordinating SDC access.
                                         </p>
-                                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 space-y-3">
-                                            <div className="flex items-start gap-2">
-                                                <svg className="w-5 h-5 text-gray-500 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                </svg>
-                                                <p className="text-gray-700 text-sm">Explain <strong>why</strong> you need access to the SDC</p>
-                                            </div>
-                                            <div className="flex items-start gap-2">
-                                                <svg className="w-5 h-5 text-gray-500 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                </svg>
-                                                <p className="text-gray-700 text-sm">If there is an associated <strong>event</strong>, reference it in your email</p>
-                                            </div>
-                                            <div className="flex items-start gap-2">
-                                                <svg className="w-5 h-5 text-gray-500 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                </svg>
-                                                <p className="text-gray-700 text-sm"><strong>CC</strong> anyone relevant (e.g., Faculty, project sponsors)</p>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </motion.div>
 
-                            {/* Step 2 - SOC Review */}
+                            {/* Step 2 - Receive Credentials */}
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -645,24 +625,15 @@ const Access: React.FC = () => {
                                         2
                                     </div>
                                     <div className="flex-1">
-                                        <h3 className="text-xl font-semibold mb-2">SOC Reviews Your Request</h3>
-                                        <p className="text-gray-600 mb-4">
-                                            SOC will review your request and send you an update regarding the status of your access request.
+                                        <h3 className="text-xl font-semibold mb-2">Receive Your Credentials</h3>
+                                        <p className="text-gray-600">
+                                            The club or event organizer will provide the credentials needed to access the VPN and SDC resources.
                                         </p>
-                                        <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
-                                            <div className="flex items-center gap-2 mb-2">
-                                                <svg className="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                                </svg>
-                                                <p className="font-medium text-blue-900">Check Your Inbox</p>
-                                            </div>
-                                            <p className="text-sm text-blue-700">You will receive an email update from SOC regarding your request status.</p>
-                                        </div>
                                     </div>
                                 </div>
                             </motion.div>
 
-                            {/* Step 3 - Receive Credentials + Installation */}
+                            {/* Step 3 - Installation */}
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -674,33 +645,14 @@ const Access: React.FC = () => {
                                         3
                                     </div>
                                     <div className="flex-1">
-                                        <h3 className="text-xl font-semibold mb-2">Receive Your Credentials & Install GlobalProtect</h3>
+                                        <h3 className="text-xl font-semibold mb-2">Download & Install GlobalProtect</h3>
                                         <p className="text-gray-600 mb-4">
-                                            Due to the nature of your external account, we generate <strong>VPN Credentials</strong> and your <strong>SDC Account Credentials</strong> with an expiration date.
+                                            Visit <a href="https://vpn.sdc.cpp.edu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-medium">vpn.sdc.cpp.edu</a> to download GlobalProtect VPN client for your operating system.
                                         </p>
-
-                                        {/* Credentials Info Box */}
-                                        <div className="bg-amber-50 rounded-lg p-4 border border-amber-200 mb-6">
-                                            <div className="flex items-start gap-3">
-                                                <svg className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
-                                                </svg>
-                                                <div>
-                                                    <p className="font-medium text-amber-800 mb-1">Credentials Delivered via Email</p>
-                                                    <p className="text-sm text-amber-700">
-                                                        You will receive your credentials from either <strong>soc@cpp.edu</strong> or <strong>noreply@calpolysoc.org</strong>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
 
                                         {/* Divider */}
                                         <div className="border-t border-gray-200 pt-5 mt-2">
                                             <h4 className="font-semibold text-gray-800 mb-3">Download & Install GlobalProtect VPN</h4>
-                                            <p className="text-gray-600 mb-4">
-                                                {/* Visit <a href="https://vpn.connect.cpp.edu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-medium">vpn.connect.cpp.edu</a> to download a VPN client for your operating system. */}
-                                                Attached will in the email from above will be a link to download the GlobalProtect VPN client for your operating system.
-                                            </p>
 
                                             {/* OS Tabs - Pill Style */}
                                             <div className="inline-flex bg-gray-100 rounded-full p-1 mb-6">
@@ -959,7 +911,7 @@ const Access: React.FC = () => {
                                                         </svg>
                                                         <p className="font-medium text-blue-900">Sign In</p>
                                                     </div>
-                                                    <p className="text-sm text-blue-700">Use your <strong>VPN credentials</strong> provided via email (not CPP SSO)</p>
+                                                    <p className="text-sm text-blue-700">Use the credentials provided by the club or event organizer (not CPP SSO)</p>
                                                 </div>
                                             </div>
 
