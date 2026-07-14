@@ -421,6 +421,11 @@ const Access: React.FC = () => {
                                                         <p className="text-gray-700 text-sm">Open the GUI or use the <code className="bg-gray-800 text-green-400 px-2 py-1 rounded text-xs font-mono">gpclient</code> CLI</p>
                                                     </div>
                                                 </div>
+                                                <div className="mt-4 rounded-lg border border-amber-200 bg-amber-50 p-3">
+                                                    <p className="text-sm text-amber-800">
+                                                        <strong>Note:</strong> The GlobalProtect-openconnect CLI is free to use. The optional GUI is a paid application with a 7-day trial after installation. After the trial, you can continue using the CLI for free or purchase the GUI.
+                                                    </p>
+                                                </div>
                                             </div>
                                         )}
                                     </div>
@@ -874,6 +879,11 @@ const Access: React.FC = () => {
                                                             <span className="w-5 h-5 bg-gray-800 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</span>
                                                             <p className="text-gray-700 text-sm">Open the GUI or use the <code className="bg-gray-800 text-green-400 px-2 py-1 rounded text-xs font-mono">gpclient</code> CLI</p>
                                                         </div>
+                                                    </div>
+                                                    <div className="mt-4 rounded-lg border border-amber-200 bg-amber-50 p-3">
+                                                        <p className="text-sm text-amber-800">
+                                                            <strong>Note:</strong> The GlobalProtect-openconnect CLI is free to use. The optional GUI is a paid application with a 7-day trial after installation. After the trial, you can continue using the CLI for free or purchase the GUI.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             )}
