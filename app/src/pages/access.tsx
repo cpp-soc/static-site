@@ -1005,11 +1005,37 @@ const Access: React.FC = () => {
                                 </div>
                             </motion.div>
 
-                            {/* Success Note */}
+                            {/* Step 5 */}
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.4 }}
+                                className="bg-white p-6 rounded-lg shadow-lg"
+                            >
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 bg-gray-800 text-white rounded-full flex items-center justify-center text-lg font-bold flex-shrink-0">
+                                        5
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="text-xl font-semibold mb-2">Create Your SDC Domain Account</h3>
+                                        <p className="text-gray-600 mb-4">
+                                            Once connected to the VPN, visit <a href="https://portal.sdc.cpp" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-medium">portal.sdc.cpp</a> to create an account on the <strong>SDC.CPP domain</strong>. This is our domain for the SDC environment.
+                                        </p>
+                                        <div
+                                            className="rounded-lg overflow-hidden shadow-md cursor-pointer hover:opacity-90 transition-opacity max-w-md"
+                                            onClick={() => setLightboxImage("/assets/access/win-10.png")}
+                                        >
+                                            <Image src="/assets/access/win-10.png" alt="SDC Portal account creation" width={800} height={600} className="w-full h-auto" unoptimized />
+                                        </div>
+                                    </div>
+                                </div>
+                            </motion.div>
+
+                            {/* Success Note */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.5 }}
                                 className="bg-green-50 border border-green-200 p-6 rounded-lg"
                             >
                                 <div className="flex items-center gap-3">
